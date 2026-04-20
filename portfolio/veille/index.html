@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille Technologique — Portfolio BTS SIO SISR</title>
+  <link rel="stylesheet" href="../shared/global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-wrap">
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <a class="nav-logo" href="../accueil/index.html">
+        <span class="logo-mark">BTS</span><span class="logo-text">SIO · SISR</span>
+      </a>
+      <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../accueil/index.html"     data-page="accueil">Accueil</a></li>
+        <li><a href="../profil/index.html"      data-page="profil">Profil</a></li>
+        <li><a href="../projets/index.html"     data-page="projets">Projets</a></li>
+        <li><a href="../stages/index.html"      data-page="stages">Stages</a></li>
+        <li><a href="../competences/index.html" data-page="competences">Compétences</a></li>
+        <li><a href="../veille/index.html"      data-page="veille">Veille</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── HERO VEILLE ──────────────────────────────────────── -->
+  <section class="veille-hero">
+    <div class="container veille-hero-inner">
+      <div class="vh-content">
+        <p class="eyebrow">Veille technologique</p>
+        <span class="gold-rule"></span>
+        <h1 class="display-title">Zero Trust<br><em>&amp; Intelligence</em><br><em>Artificielle</em></h1>
+        <div class="vh-question">
+          <p class="vh-q-label">Problématique</p>
+          <blockquote>
+            Comment l'intelligence artificielle se met-elle au service du modèle Zero Trust ?
+          </blockquote>
+        </div>
+      </div>
+      <div class="vh-concepts">
+        <div class="concept-pill">
+          <span class="cp-icon"></span>
+          <div>
+            <strong>Zero Trust</strong>
+            <p>Ne jamais faire confiance, toujours vérifier</p>
+          </div>
+        </div>
+        <div class="concept-arrow">×</div>
+        <div class="concept-pill">
+          <span class="cp-icon"></span>
+          <div>
+            <strong>Intelligence Artificielle</strong>
+            <p>Analyse comportementale &amp; automatisation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INTRODUCTION ─────────────────────────────────────── -->
+  <section class="section-intro">
+    <div class="container">
+      <div class="intro-layout reveal">
+        <div class="intro-col-label">
+          <p class="eyebrow">Contexte</p>
+          <span class="gold-rule"></span>
+        </div>
+        <div class="intro-col-content">
+          <h2 class="section-heading">Introduction au sujet</h2>
+          <p>
+            Dans un contexte où les cyberattaques se multiplient et se sophistiquent, le modèle
+            <strong>Zero Trust</strong> — « ne jamais faire confiance, toujours vérifier » — s'impose
+            comme une nouvelle philosophie de sécurité des systèmes d'information. Contrairement aux
+            approches périmètrales traditionnelles, Zero Trust présuppose qu'aucun utilisateur ni système
+            n'est intrinsèquement fiable, même à l'intérieur du réseau.
+          </p>
+          <p class="mt-p">
+            Parallèlement, l'<strong>intelligence artificielle</strong> offre des capacités inédites
+            d'analyse comportementale, de détection d'anomalies et d'automatisation des réponses aux
+            incidents. La convergence de ces deux domaines ouvre des perspectives majeures pour la
+            cybersécurité moderne — c'est cette convergence que j'ai choisie d'explorer dans ma veille.
+          </p>
+        </div>
+      </div>
+
+      <!-- Piliers Zero Trust -->
+      <div class="zt-pillars reveal reveal-delay-2">
+        <p class="pillars-label eyebrow">Les 3 principes du Zero Trust</p>
+        <div class="pillars-grid">
+          <div class="pillar">
+            <span class="pillar-num">1</span>
+            <h4>Vérifier explicitement</h4>
+            <p>Authentifier et autoriser à partir de tous les points de données disponibles</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-num">2</span>
+            <h4>Moindre privilège</h4>
+            <p>Limiter l'accès utilisateur au strict nécessaire, selon le contexte</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-num">3</span>
+            <h4>Supposer la compromission</h4>
+            <p>Minimiser le rayon d'explosion, segmenter les accès, chiffrer de bout en bout</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ARTICLES ─────────────────────────────────────────── -->
+  <section class="section-articles">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Corpus documentaire</p>
+        <span class="gold-rule"></span>
+        <h2 class="section-heading">Articles analysés</h2>
+      </div>
+
+      <!-- Filtres -->
+      <div class="filter-row reveal reveal-delay-1">
+        <button class="filter-btn filter-active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="zt">Zero Trust</button>
+        <button class="filter-btn" data-filter="ia">Intelligence Artificielle</button>
+        <button class="filter-btn" data-filter="combo">IA + Zero Trust</button>
+      </div>
+
+      <div class="articles-grid">
+
+        <!-- Article 1 -->
+        <article class="article-card reveal reveal-delay-1" data-cat="zt">
+          <div class="ac-top">
+            <span class="ac-category tag tag-navy">Zero Trust</span>
+            <span class="ac-date">2025</span>
+          </div>
+          <div class="ac-source">Journal du Net</div>
+          <h3>Zero Trust — un idéal de cybersécurité difficile à concrétiser</h3>
+          <p class="ac-summary">
+            Le modèle Zero Trust, référence en cybersécurité, repose sur la vérification systématique 
+            de chaque accès. Face aux infrastructures hybrides difficiles à sécuriser et à un écosystème 
+            logiciel fragmenté, l'IA devient un levier stratégique pour automatiser les décisions d'accès 
+            en temps réel et améliorer la détection des comportements suspects.
+          </p>
+          <div class="ac-analysis">
+            <p class="ac-analysis-label">Mon analyse</p>
+            <p>
+              Cet article pose clairement la tension entre l'idéal Zero Trust et sa mise en œuvre concrète. 
+              Il m'a permis de comprendre pourquoi l'IA n'est pas un simple complément mais une nécessité 
+              pour rendre le Zero Trust opérationnel à grande échelle.
+            </p>
+          </div>
+          <div class="ac-tags"><span class="tag tag-soft">Source officielle</span><span class="tag tag-navy">Zero Trust</span></div>
+          <a href="https://www.journaldunet.com/cybersecurite/1542259-zero-trust-un-ideal-de-cybersecurite-toujours-difficile-a-concretiser/" target="_blank" class="ac-link">Lire l'article →</a>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card reveal reveal-delay-2" data-cat="combo">
+          <div class="ac-top">
+            <span class="ac-category tag tag-gold">IA + Zero Trust</span>
+            <span class="ac-date">2025</span>
+          </div>
+          <div class="ac-source">Business Wire</div>
+          <h3>mimik et AMD — IA embarquée sécurisée par Zero Trust</h3>
+          <p class="ac-summary">
+            mimik et AMD proposent une infrastructure d'IA embarquée, sécurisée par des principes 
+            Zero Trust. L'objectif est d'offrir une exécution d'IA locale et confidentielle, 
+            sans dépendance au cloud. Les puces AMD permettent de déployer des IA distribuées et sécurisées 
+            tout en maintenant une vigilance continue sur les accès.
+          </p>
+          <div class="ac-analysis">
+            <p class="ac-analysis-label">Mon analyse</p>
+            <p>
+              Cet article illustre une convergence concrète entre IA et Zero Trust à l'échelle matérielle. 
+              La notion d'IA locale sans cloud est particulièrement intéressante : elle répond aux enjeux 
+              de souveraineté des données tout en appliquant Zero Trust nativement.
+            </p>
+          </div>
+          <div class="ac-tags"><span class="tag tag-gold">IA embarquée</span><span class="tag tag-soft">Zero Trust</span></div>
+          <a href="https://www.businesswire.com/news/home/20250611865613/fr" target="_blank" class="ac-link">Lire l'article →</a>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card reveal reveal-delay-3" data-cat="combo">
+          <div class="ac-top">
+            <span class="ac-category tag tag-navy">IA + Zero Trust</span>
+            <span class="ac-date">2025</span>
+          </div>
+          <div class="ac-source">IT Social</div>
+          <h3>Zscaler — plateforme Zero Trust unifiée et automatisée par l'IA</h3>
+          <p class="ac-summary">
+             En 2025, Zscaler renforce sa plateforme Zero Trust pour en faire une solution capable de 
+             superviser et réagir aux menaces en temps réel. L'IA analyse les risques, segmente 
+             dynamiquement les accès et réduit le temps de réponse aux incidents. Elle permet également 
+             de gérer les accès B2B de façon sécurisée.
+          </p>
+          <div class="ac-analysis">
+            <p class="ac-analysis-label">Mon analyse</p>
+            <p>
+              Zscaler est un acteur majeur du Zero Trust. Cet article montre comment l'IA transforme 
+              une architecture statique en un système dynamique et adaptatif — c'est exactement la 
+              réponse à ma problématique de veille.
+            </p>
+          </div>
+          <div class="ac-tags"><span class="tag tag-navy">Zero Trust</span><span class="tag tag-gold">Automatisation</span></div>
+          <a href="https://itsocial.fr/cybersecurite/cybersecurite-actualites/zscaler-repositionne-sa-plateforme-zero-trust-comme-socle-dun-pilotage-unifie-et-automatise-de-la-cybersecurite/" target="_blank" class="ac-link">Lire l'article →</a>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article-card reveal reveal-delay-1" data-cat="zt">
+          <div class="ac-top">
+            <span class="ac-category tag tag-navy">Zero Trust</span>
+            <span class="ac-date">2025</span>
+          </div>
+          <div class="ac-source">Alcatel-Lucent Enterprise</div>
+          <h3>Partenariat ALE – Versa Networks — Zero Trust pour environnements hybrides</h3>
+          <p class="ac-summary">
+            Le partenariat entre Alcatel-Lucent Enterprise et Versa Networks combine Zero Trust et 
+            intelligence artificielle pour renforcer la cybersécurité des entreprises. Les solutions 
+            Versa apportent un SD-WAN intelligent, un pilotage SASE et une approche Zero Trust 
+            évolutive, adaptée aux environnements hybrides et multisites.
+          </p>
+          <div class="ac-analysis">
+            <p class="ac-analysis-label">Mon analyse</p>
+            <p>
+              Cet article démontre que le Zero Trust n'est plus réservé aux grandes entreprises : 
+              via des partenariats industriels, il devient accessible aux architectures distribuées 
+              et multisites, un contexte très proche des réalités terrain de la SISR.
+            </p>
+          </div>
+          <div class="ac-tags"><span class="tag tag-soft">SD-WAN · SASE</span><span class="tag tag-navy">Zero Trust</span></div>
+          <a href="https://www.al-enterprise.com/fr-fr/entreprise/actualites/ale-versa-partnership" target="_blank" class="ac-link">Lire l'article →</a>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="article-card reveal reveal-delay-2" data-cat="combo">
+          <div class="ac-top">
+            <span class="ac-category tag tag-gold">IA + Zero Trust</span>
+            <span class="ac-date">2025</span>
+          </div>
+          <div class="ac-source">Emerson</div>
+          <h3>Project Beyond – Emerson — IA, cloud et Zero Trust dans l'industrie</h3>
+          <p class="ac-summary">
+            En mai 2025, Emerson annonce "Project Beyond", une initiative pour moderniser les 
+            technologies d'automatisation industrielle en intégrant IA, connectivité cloud et 
+            cybersécurité Zero Trust. L'approche permet de superviser les systèmes critiques avec 
+            des analyses en temps réel tout en assurant un cloisonnement strict et une résilience 
+            aux cybermenaces.
+          </p>
+          <div class="ac-analysis">
+            <p class="ac-analysis-label">Mon analyse</p>
+            <p>
+              Ce cas industriel est particulièrement fort : il montre que le Zero Trust s'étend 
+              désormais aux systèmes OT (Operational Technology), bien au-delà des SI classiques. 
+              L'IA y joue un rôle de supervision en temps réel sur des infrastructures critiques.
+            </p>
+          </div>
+          <div class="ac-tags"><span class="tag tag-gold">Industrie</span><span class="tag tag-soft">IA</span><span class="tag tag-navy">Zero Trust</span></div>
+              <a href="https://www.emerson.com/fr-fr/news/2025/05-emerson-project-beyond-to-modernize-and-seamlessly-integrate-the-industrial-automation-technology-stack" target="_blank" class="ac-link">Lire l'article →</a>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="article-card reveal reveal-delay-3" data-cat="combo">
+          <div class="ac-top">
+            <span class="ac-category tag tag-navy">IA + Zero Trust</span>
+            <span class="ac-date">2025</span>
+          </div>
+          <div class="ac-source">Repenser la cyberdéfense avec Zero Trust et l'IA</div>
+          <h3>Microsoft Zero Trust Adoption Framework — déploiement en entreprise</h3>
+          <p class="ac-summary">
+            En abandonnant l'idée d'un périmètre de confiance statique, les entreprises utilisent 
+            l'IA pour analyser en continu les comportements (utilisateurs, machines, flux réseau), 
+            réagir en temps réel aux menaces via des réponses automatisées (blocage, segmentation, 
+            alertes) et améliorer la détection des anomalies face aux cyberattaques complexes.
+          </p>
+          <div class="ac-analysis">
+            <p class="ac-analysis-label">Mon analyse</p>
+            <p>
+              Article très synthétique qui résume parfaitement la valeur ajoutée de l'IA dans une 
+              stratégie Zero Trust. Il constitue une bonne conclusion à ma veille : l'IA ne remplace 
+              pas le Zero Trust, elle le rend réellement opérationnel.
+            </p>
+          </div>
+          <div class="ac-tags"><span class="tag tag-navy">Zero Trust</span><span class="tag tag-soft">Synthèse</span></div>
+          <a href="https://thehackernews.com/expert-insights/2025/04/rethinking-cyber-defense-with-zero.html" target="_blank" class="ac-link">Lire l'article →</a>
+        </article>
+
+        <!-- Article 7 -->
+        <article class="article-card reveal reveal-delay-3" data-cat="ia">
+          <div class="ac-top">
+            <span class="ac-category tag tag-navy">Intelligence Artificielle</span>
+            <span class="ac-date">2025</span>
+          </div>
+          <div class="ac-source">Business Wire</div>
+          <h3>Protect AI et Leidos — sécuriser les IA des agences fédérales américaines</h3>
+          <p class="ac-summary">
+            En juin 2025, Protect AI et Leidos annoncent un partenariat stratégique pour renforcer 
+            la cybersécurité des IA utilisées dans les agences fédérales américaines. Grâce au modèle 
+            Zero Trust, ce partenariat vise à détecter les menaces tout au long du cycle de vie des IA, 
+            garantir leur intégrité et sécuriser modèles et données à l'échelle gouvernementale.
+          </p>
+          <div class="ac-analysis">
+            <p class="ac-analysis-label">Mon analyse</p>
+            <p>
+              Cet article apporte une dimension nouvelle : protéger les IA elles-mêmes par Zero Trust. 
+              Ce n'est plus l'IA qui renforce le Zero Trust, mais le Zero Trust qui sécurise l'IA — 
+              une relation bidirectionnelle qui enrichit considérablement ma problématique.
+            </p>
+          </div>
+          <div class="ac-tags"><span class="tag tag-gold">Sécurité de l'IA</span><span class="tag tag-soft">Sécurité de l'IA</span></div>
+          <a href="https://www.businesswire.com/news/home/20250424843145/en/Protect-AI-and-Leidos-to-Secure-AI-Across-U.S.-Government-Systems" target="_blank" class="ac-link">Lire l'article →</a>
+
+      </div><!-- /articles-grid -->
+    </div>
+  </section>
+
+
+<!-- ── DOCUMENT DE VEILLE ────────────────────────────────── -->
+<section class="section-tableau reveal">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Document de synthèse</p>
+      <span class="gold-rule"></span>
+      <h2 class="section-heading">Dossier de veille</h2>
+    </div>
+    <div class="tableau-viewer">
+      <div class="pdf-card">
+        <div class="pdf-card-header">
+          <div>
+            <p class="pdf-card-title">Dossier de veille technologique</p>
+            <p class="pdf-card-sub">Zero Trust &amp; Intelligence Artificielle — synthèse complète</p>
+          </div>
+        </div>
+        <iframe class="pdf-iframe-full"
+                src="docs/veilleresum.pdf"
+                title="Dossier de veille">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>  
+
+
+  <!-- ── SYNTHÈSE ──────────────────────────────────────────── -->
+  <section class="section-synthese">
+    <div class="container">
+      <div class="synthese-layout reveal">
+        <div class="syn-label">
+          <p class="eyebrow">Conclusion</p>
+          <span class="gold-rule"></span>
+        </div>
+        <div class="syn-content">
+          <h2 class="section-heading">Synthèse de la veille</h2>
+          <p>
+            Au terme de cette veille, trois axes de convergence entre l'IA et le Zero Trust se dégagent.
+            Premièrement, l'<strong>analyse comportementale continue</strong> : l'IA modélise le comportement
+            normal de chaque utilisateur et alerte immédiatement en cas d'anomalie, renforçant le principe
+            « toujours vérifier ». Deuxièmement, l'<strong>authentification adaptative</strong> : grâce au
+            scoring de risque en temps réel, le niveau d'authentification s'ajuste dynamiquement selon
+            le contexte. Troisièmement, l'<strong>automatisation de la réponse</strong> : les SOAR intégrant
+            l'IA réduisent le temps de réaction aux incidents de plusieurs heures à quelques secondes.
+          </p>
+          <p class="mt-p">
+            En conclusion, l'IA ne remplace pas le Zero Trust mais en amplifie l'efficacité en apportant
+            la dimension <strong>temps réel et contextuelle</strong> que le modèle nécessite pour être
+            pleinement opérationnel dans des environnements complexes et hybrides.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">Portfolio BTS SIO SISR · 2024–2026</div>
+  </footer>
+
+  <script src="../shared/shared.js"></script>
+  <script>
+    // Filtres articles
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('filter-active'));
+        btn.classList.add('filter-active');
+        const f = btn.dataset.filter;
+        document.querySelectorAll('.article-card').forEach(card => {
+          const show = f === 'all' || card.dataset.cat === f;
+          card.style.display = show ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

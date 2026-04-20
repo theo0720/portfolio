@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétences — Portfolio BTS SIO SISR</title>
+  <link rel="stylesheet" href="../shared/global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-wrap">
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <a class="nav-logo" href="../accueil/index.html">
+        <span class="logo-mark">BTS</span><span class="logo-text">SIO · SISR</span>
+      </a>
+      <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../accueil/index.html"     data-page="accueil">Accueil</a></li>
+        <li><a href="../profil/index.html"      data-page="profil">Profil</a></li>
+        <li><a href="../projets/index.html"     data-page="projets">Projets</a></li>
+        <li><a href="../stages/index.html"      data-page="stages">Stages</a></li>
+        <li><a href="../competences/index.html" data-page="competences">Compétences</a></li>
+        <li><a href="../veille/index.html"      data-page="veille">Veille</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── PAGE HEADER ─────────────────────────────────────── -->
+  <section class="page-header">
+    <canvas id="ph-particles" data-particles aria-hidden="true"
+            style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;"></canvas>
+    <div class="container" style="position:relative;z-index:1;">
+      <p class="eyebrow">Vision globale</p>
+      <span class="gold-rule"></span>
+      <h1 class="display-title">Compétences</h1>
+      <p class="page-header-desc">
+        Panorama des compétences techniques acquises en BTS SIO option SISR,
+        selon le référentiel national.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── DOMAINES ─────────────────────────────────────────── -->
+  <section class="section-skills">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <p class="eyebrow">Compétences techniques</p>
+        <span class="gold-rule"></span>
+        <h2 class="section-heading">Par domaine</h2>
+      </div>
+
+      <div class="skills-areas">
+
+        <!-- Réseaux -->
+        <div class="skill-area reveal reveal-delay-1" data-skills-block>
+          <div class="sa-header">
+            <div class="sa-icon"></div>
+            <div>
+              <h3>Réseaux</h3>
+              <p>TCP/IP, commutation, routage, protocoles</p>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="bar-item">
+              <div class="bar-meta"><span>TCP/IP — Adressage IPv4/IPv6</span><span class="bar-pct">85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="85%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>VLANs &amp; commutation Cisco</span><span class="bar-pct">80%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="80%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>Routage statique &amp; dynamique (OSPF)</span><span class="bar-pct">70%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="70%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>DNS / DHCP / NTP</span><span class="bar-pct">80%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="80%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>VPN (IPSec, OpenVPN)</span><span class="bar-pct">65%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="65%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>Analyse de trafic (Wireshark)</span><span class="bar-pct">75%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="75%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Systèmes -->
+        <div class="skill-area reveal reveal-delay-2" data-skills-block>
+          <div class="sa-header">
+            <div class="sa-icon"></div>
+            <div>
+              <h3>Systèmes</h3>
+              <p>Linux, Windows Server, annuaires</p>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="bar-item">
+              <div class="bar-meta"><span>Linux (Debian, Ubuntu Server)</span><span class="bar-pct">80%</span></div>
+              <div class="bar-track"><div class="bar-fill bar-fill--alt" data-w="80%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>Windows Server 2019/2022</span><span class="bar-pct">75%</span></div>
+              <div class="bar-track"><div class="bar-fill bar-fill--alt" data-w="75%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>Active Directory (GPO, utilisateurs)</span><span class="bar-pct">70%</span></div>
+              <div class="bar-track"><div class="bar-fill bar-fill--alt" data-w="70%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>Scripting Bash / PowerShell</span><span class="bar-pct">65%</span></div>
+              <div class="bar-track"><div class="bar-fill bar-fill--alt" data-w="65%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>Supervision (Zabbix, Nagios)</span><span class="bar-pct">55%</span></div>
+              <div class="bar-track"><div class="bar-fill bar-fill--alt" data-w="55%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>Sauvegardes &amp; PRA</span><span class="bar-pct">60%</span></div>
+              <div class="bar-track"><div class="bar-fill bar-fill--alt" data-w="60%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cybersécurité -->
+        <div class="skill-area reveal reveal-delay-3" data-skills-block>
+          <div class="sa-header">
+            <div class="sa-icon"></div>
+            <div>
+              <h3>Cybersécurité</h3>
+              <p>Firewall, protection des SI, bonnes pratiques</p>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="bar-item">
+              <div class="bar-meta"><span>Pare-feu (pfSense, iptables)</span><span class="bar-pct">75%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="75%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>Modèle Zero Trust</span><span class="bar-pct">65%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="65%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>IDS/IPS (Snort, Suricata)</span><span class="bar-pct">60%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="60%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>PKI — Certificats TLS/SSL</span><span class="bar-pct">55%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="55%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>Analyse de vulnérabilités</span><span class="bar-pct">50%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="50%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>Sensibilisation RGPD &amp; PSSI</span><span class="bar-pct">60%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="60%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outils -->
+        <div class="skill-area reveal reveal-delay-4" data-skills-block>
+          <div class="sa-header">
+            <div class="sa-icon"></div>
+            <div>
+              <h3>Outils &amp; Virtualisation</h3>
+              <p>Conteneurs, hyperviseurs, versioning</p>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="bar-item">
+              <div class="bar-meta"><span>Docker &amp; Docker Compose</span><span class="bar-pct">75%</span></div>
+              <div class="bar-track"><div class="bar-fill bar-fill--alt" data-w="75%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>VirtualBox / VMware</span><span class="bar-pct">80%</span></div>
+              <div class="bar-track"><div class="bar-fill bar-fill--alt" data-w="80%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>Git &amp; GitHub</span><span class="bar-pct">65%</span></div>
+              <div class="bar-track"><div class="bar-fill bar-fill--alt" data-w="65%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>Cisco Packet Tracer / GNS3</span><span class="bar-pct">80%</span></div>
+              <div class="bar-track"><div class="bar-fill bar-fill--alt" data-w="80%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>Proxmox (hyperviseur)</span><span class="bar-pct">45%</span></div>
+              <div class="bar-track"><div class="bar-fill bar-fill--alt" data-w="45%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-meta"><span>Draw.io — Schémas réseau</span><span class="bar-pct">85%</span></div>
+              <div class="bar-track"><div class="bar-fill bar-fill--alt" data-w="85%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /skills-areas -->
+    </div>
+  </section>
+
+  <!-- ── RÉFÉRENTIEL ───────────────────────────────────────── -->
+  <section class="section-referentiel">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Référentiel national</p>
+        <span class="gold-rule"></span>
+        <h2 class="section-heading">Blocs de compétences BTS SIO SISR</h2>
+      </div>
+      <div class="ref-table-wrap reveal reveal-delay-1">
+        <table class="ref-table">
+          <thead>
+            <tr>
+              <th>Compétence</th>
+              <th>Domaine</th>
+              <th>Niveau</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Construire une infrastructure réseau</td>
+              <td><span class="tag tag-navy">Réseaux</span></td>
+              <td><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></td>
+            </tr>
+            <tr>
+              <td>Administrer et exploiter un système Linux</td>
+              <td><span class="tag tag-soft">Systèmes</span></td>
+              <td><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></td>
+            </tr>
+            <tr>
+              <td>Administrer un annuaire Active Directory</td>
+              <td><span class="tag tag-soft">Systèmes</span></td>
+              <td><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></td>
+            </tr>
+            <tr>
+              <td>Sécuriser le réseau (firewall, DMZ, VPN)</td>
+              <td><span class="tag tag-navy">Sécurité</span></td>
+              <td><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></td>
+            </tr>
+            <tr>
+              <td>Virtualiser des environnements</td>
+              <td><span class="tag tag-gold">Outils</span></td>
+              <td><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></td>
+            </tr>
+            <tr>
+              <td>Mettre en œuvre une solution de sauvegarde</td>
+              <td><span class="tag tag-soft">Systèmes</span></td>
+              <td><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></td>
+            </tr>
+            <tr>
+              <td>Superviser et surveiller un SI</td>
+              <td><span class="tag tag-navy">Sécurité</span></td>
+              <td><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></td>
+            </tr>
+            <tr>
+              <td>Rédiger une documentation technique</td>
+              <td><span class="tag tag-gold">Transversal</span></td>
+              <td><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- ── TABLEAU DE SYNTHÈSE ───────────────────────────────── -->
+<section class="section-tableau reveal">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Synthèse</p>
+      <span class="gold-rule"></span>
+      <h2 class="section-heading">Tableau de compétences</h2>
+    </div>
+    <div class="tableau-viewer">
+      <div class="pdf-card">
+        <div class="pdf-card-header">
+          <div>
+            <p class="pdf-card-title">Tableau de synthèse des compétences</p>
+            <p class="pdf-card-sub">Vision globale des compétences acquises en BTS SIO SISR</p>
+          </div>
+        </div>
+        <iframe class="pdf-iframe-full"
+                src="docs/tableau-competences.pdf"
+                title="Tableau de compétences">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="site-footer">
+    <div class="container">Portfolio BTS SIO SISR · 2024–2026</div>
+  </footer>
+  <script src="../shared/shared.js"></script>
+  <script src="../shared/particles.js"></script>
+</body>
+</html>

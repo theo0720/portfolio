@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stages — Portfolio BTS SIO SISR</title>
+  <link rel="stylesheet" href="../shared/global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-wrap">
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <a class="nav-logo" href="../accueil/index.html">
+        <span class="logo-mark">BTS</span><span class="logo-text">SIO · SISR</span>
+      </a>
+      <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../accueil/index.html"     data-page="accueil">Accueil</a></li>
+        <li><a href="../profil/index.html"      data-page="profil">Profil</a></li>
+        <li><a href="../projets/index.html"     data-page="projets">Projets</a></li>
+        <li><a href="../stages/index.html"      data-page="stages">Stages</a></li>
+        <li><a href="../competences/index.html" data-page="competences">Compétences</a></li>
+        <li><a href="../veille/index.html"      data-page="veille">Veille</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── PAGE HEADER ─────────────────────────────────────── -->
+  <section class="page-header">
+    <canvas id="ph-particles" data-particles aria-hidden="true"
+            style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;"></canvas>
+    <div class="container" style="position:relative;z-index:1;">
+      <p class="eyebrow">Expériences professionnelles</p>
+      <span class="gold-rule"></span>
+      <h1 class="display-title">Mes Stages</h1>
+      <p class="page-header-desc">
+        Deux stages réalisés chez <strong>Maqprint</strong> à Limoges, permettant
+        une immersion concrète en milieu professionnel.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── SÉLECTEUR ────────────────────────────────────────── -->
+  <section class="stages-section">
+    <div class="container" data-tabs-group>
+
+      <div class="stage-selector reveal">
+        <button class="stage-sel-btn tab-active" data-tab="s1">
+          <span class="ss-label">Stage 1</span>
+          <span class="ss-sub">1ère année · Maqprint</span>
+        </button>
+        <button class="stage-sel-btn" data-tab="s2">
+          <span class="ss-label">Stage 2</span>
+          <span class="ss-sub">2ème année · Maqprint</span>
+        </button>
+      </div>
+
+      <!-- ══ STAGE 1 ═══════════════════════════════════════ -->
+      <div data-panel="s1" class="stage-panel panel-active">
+
+        <!-- Entreprise -->
+        <div class="company-banner reveal reveal-delay-1">
+          <div class="company-logo-wrap">
+            <div class="company-logo">MQ</div>
+          </div>
+          <div class="company-info">
+            <p class="eyebrow" style="color:var(--gold-light);">Entreprise d'imprimerie</p>
+            <h2>Maqprint</h2>
+            <p class="company-desc">
+              Entreprise spécialisée dans l'imprimerie et la communication visuelle,
+              basée à Limoges (Haute-Vienne). Reprographie, impression numérique et
+              grand format, conseil en communication.
+            </p>
+            <div class="company-meta-row">
+              <span class="cm-item"><strong>📍</strong> Limoges, 87</span>
+              <span class="cm-item"><strong>🏭</strong> Imprimerie / Communication</span>
+              <span class="cm-item"><strong>👥</strong> PME — &lt; 100 salariés</span>
+              <span class="cm-item"><strong>📅</strong> 26 mai au 26 juin 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Missions -->
+        <div class="stage-grid">
+          <div class="stage-col-main">
+            <div class="stage-block reveal reveal-delay-2">
+              <h3 class="sb-title">Missions réalisées</h3>
+              <div class="missions-list">
+                <div class="mission-item">
+                  <div class="mission-num">1</div>
+                  <div>
+                    <h4>Déploiement d’une infrastructure Dockerisée</h4>
+                    <p>Installation et configuration de <strong>Docker</strong> et <strong>Docker Compose</strong>, création et gestion de conteneurs, orchestration de plusieurs services au sein d’un environnement isolé.</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">2</div>
+                  <div>
+                    <h4>Mise en place d’une solution de supervision</h4>
+                    <p>Déploiement d’une <strong>stack de monitoring</strong> complète (Zabbix, Grafana, Uptime Kuma, Dozzle), configuration des services et vérification de leur bon fonctionnement.</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">3</div>
+                  <div>
+                    <h4>Configuration des communications inter-services</h4>
+                    <p>Mise en place d’un <strong>réseau Docker commun</strong>, gestion des échanges entre conteneurs via DNS internes, résolution de problèmes de connectivité (ports, accès, services).</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">4</div>
+                  <div>
+                    <h4>Tests et validation des services</h4>
+                    <p>Réalisation de tests de fonctionnement (accessibilité web, communication réseau, remontée des données), validation de l’intégration des différents outils de supervision.</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">5</div>
+                  <div>
+                    <h4>Analyse et résolution d’incidents techniques</h4>
+                    <p>Diagnostic d’erreurs (logs, connexions refusées, problèmes réseau), utilisation d’outils de debug (logs Docker, Dozzle, commandes Linux) pour corriger les dysfonctionnements.</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">6</div>
+                  <div>
+                    <h4>Exploitation et analyse des logs</h4>
+                    <p>Utilisation de Dozzle et des outils Docker pour consulter et interpréter les logs, identifier les anomalies et améliorer la stabilité des services.</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">7</div>
+                  <div>
+                    <h4>Création d’un portfolio professionnel</h4>
+                    <p>Développement d’un site web personnel présentant les projets réalisés, les compétences acquises et une veille technologique, avec une structuration claire et professionnelle.</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">8</div>
+                  <div>
+                    <h4>Réalisation d’une veille technologique</h4>
+                    <p>Recherche d’informations sur les outils de supervision, Docker et la cybersécurité, analyse de ressources techniques et intégration des résultats dans le portfolio.</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">9</div>
+                  <div>
+                    <h4>Initiation à la cybersécurité</h4>
+                    <p>Réalisation de modules pratiques sur des plateformes spécialisées (TryHackMe, HackTheBox), découverte des bases de la sécurité informatique (réseau, vulnérabilités, analyse).</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">10</div>
+                  <div>
+                    <h4>Documentation technique</h4>
+                    <p>Rédaction de notes et de documentations sur l’installation, la configuration et l’utilisation des outils déployés afin de faciliter leur compréhension et leur réutilisation.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stage-col-side">
+            <!-- Outils -->
+            <div class="stage-block reveal reveal-delay-3">
+              <h3 class="sb-title">Outils utilisés</h3>
+              <div class="tools-wrap">
+                <span class="tool">Docker</span>
+                <span class="tool">Zabbix</span>
+                <span class="tool">Grafana</span>
+                <span class="tool">Uptime Kuma</span>
+                <span class="tool">Dozzle</span>
+                <span class="tool">Linux</span>
+                <span class="tool">Git / GitHub</span>
+                <span class="tool">Navigateur Web</span>
+                <span class="tool">TryHackMe / HackTheBox</span>
+              </div>
+            </div>
+
+            <!-- Compétences -->
+            <div class="stage-block reveal reveal-delay-4">
+              <h3 class="sb-title">Compétences développées</h3>
+              <div class="comp-list">
+                <div class="comp-item">
+                  <span class="comp-dot comp-dot--tech"></span>
+                  <div>
+                    <strong>Technique</strong>
+                    <p>- Déploiement et gestion d’environnements Dockerisés</p>
+                    <p>- Configuration d’une infrastructure de monitoring complète</p>
+                    <p>- Compréhension des réseaux (TCP/IP, ports, DNS, NAT)</p>
+                    <p>- Analyse et résolution de problèmes techniques</p>
+                    <p>- Lecture et exploitation de logs systèmes</p>
+                  </div>
+                  </div>
+                <div class="comp-item">
+                  <span class="comp-dot comp-dot--orga"></span>
+                  <div>
+                    <strong>Professionnelles</strong>
+                    <p>- Travail en autonomie</p>
+                    <p>- Méthodologie de résolution de problèmes</p>
+                    <p>- Capacité à tester et valider un service</p>
+                    <p>- Rédaction de documentation technique</p>
+                    <p>- Organisation du travail en mode projet</p>
+                  </div>
+                  </div>
+                <div class="comp-item">
+                  <span class="comp-dot comp-dot--rel"></span>
+                  <div>
+                    <strong>Veille et cybersécurité</strong>
+                    <p>- Initiation aux tests de sécurité</p>
+                    <p>- Compréhension des vulnérabilités réseau</p>
+                    <p>- Développement d’une veille technologique active</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bilan -->
+        <div class="bilan-block reveal">
+          <h3 class="sb-title">Bilan du stage</h3>
+          <div class="bilan-grid">
+            <div class="bilan-card bilan-pos">
+              <h4>Points positifs</h4>
+              <ul>
+                <li>Découverte du monde professionnel et de ses contraintes réelles</li>
+                <li>Application concrète des connaissances théoriques</li>
+                <li>Découverte concrète des environnements Docker et des technologies de conteneurisation</li>
+                <li>Amélioration des capacités de diagnostic et résolution de problèmes techniques</li>
+                <li>Gain en autonomie dans la recherche de solutions et l’apprentissage</li>
+                <li>Utilisation d’outils professionnels de supervision et d’analyse de logs</li>
+                <li>Expérience dans le déploiement et la validation de services informatiques</li>
+                <li>Compréhension globale du fonctionnement d’un système d’information</li>
+              </ul>
+            </div>
+            <div class="bilan-card bilan-axe">
+              <h4>Axes de progression</h4>
+              <ul>
+                <li>Approfondir les compétences en réseau avancé (routage, sécurité, architecture)</li>
+                <li>Mieux maîtriser certains aspects de Docker avancé (sécurité, optimisation)</li>
+                <li>Améliorer la rapidité de diagnostic face à des incidents complexes</li>
+                <li>Approfondir les connaissances en administration réseau</li>
+                <li>Travailler la communication technique (expliquer simplement des notions complexes)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- PDF -->
+        <div class="pdf-stage-block reveal">
+          <h3 class="sb-title">Rapport de stage</h3>
+          <div class="pdf-duo">
+          
+            <div class="pdf-card">
+              <div class="pdf-card-header">
+                <div>
+                  <p class="pdf-card-title">Rapport de stage</p>
+                  <p class="pdf-card-sub">Document de synthèse du stage</p>
+                </div>
+              </div>
+              <iframe class="pdf-iframe-large"
+                      src="docs/RAPPORT_STAGE1.pdf"
+                      title="Rapport stage 1">
+              </iframe>
+            </div>
+          
+            <div class="pdf-card">
+              <div class="pdf-card-header">
+                <div>
+                  <p class="pdf-card-title">Découverte de Git et GitHub</p>
+                  <p class="pdf-card-sub">Document de formation sur les bases de Git et GitHub</p>
+                </div>
+              </div>
+              <iframe class="pdf-iframe-large"
+                      src="docs/GIT.pdf"
+                      title="GIT stage 1">
+              </iframe>
+            </div>
+          
+          </div>
+        </div>
+
+        </div><!-- /stage-1 -->
+
+      <!-- ══ STAGE 2 ═══════════════════════════════════════ -->
+      <div data-panel="s2" class="stage-panel">
+
+        <div class="company-banner reveal reveal-delay-1">
+          <div class="company-logo-wrap">
+            <div class="company-logo">MQ</div>
+          </div>
+          <div class="company-info">
+            <p class="eyebrow" style="color:var(--gold-light);">Entreprise d'imprimerie</p>
+            <h2>Maqprint</h2>
+            <p class="company-desc">
+              Second stage réalisé chez Maqprint, avec des missions plus techniques et une autonomie accrue, permettant de consolider les compétences acquises lors du premier stage.
+            </p>
+            <div class="company-meta-row">
+              <span class="cm-item"><strong>📍</strong> Limoges, 87</span>
+              <span class="cm-item"><strong>🏭</strong> Imprimerie / Communication</span>
+              <span class="cm-item"><strong>👥</strong> PME — &lt; 20 salariés</span>
+              <span class="cm-item"><strong>📅</strong> 5 janvier - 13 février</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-grid">
+          <div class="stage-col-main">
+            <div class="stage-block reveal reveal-delay-2">
+              <h3 class="sb-title">Missions réalisées</h3>
+              <div class="missions-list">
+                <div class="mission-item">
+                  <div class="mission-num">1</div>
+                  <div>
+                    <h4>Développement d’une application de gestion de calendrier</h4>
+                    <p>Mise en place d’une application web permettant d’afficher un calendrier mensuel dynamique, avec navigation entre les mois et visualisation des jours. 
+                      Interface permettant à l'administrateur de sélectionner une date afin d’interagir avec les événements associés.</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">2</div>
+                  <div>
+                    <h4>Implémentation du système de gestion des événements (CRUD)</h4>
+                    <p>Développement des fonctionnalités permettant de créer, lire, mettre à jour et supprimer des événements dans une base de données. 
+                      Chaque événement comprend un titre, une date, une plage horaire, une salle associée ainsi qu’une liste de participants.</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">3</div>
+                  <div>
+                    <h4>Conception et gestion de la base de données</h4>
+                    <p>Création et structuration d’une base de données relationnelle sous MySQL comprenant plusieurs tables : événements, personnes, salles et table de liaison (event_persons). 
+                      Mise en place des relations entre les entités afin de garantir la cohérence des données.</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">4</div>
+                  <div>
+                    <h4>Développement de l’interface de l'administrateur (front-end)</h4>
+                    <p>Création d’une interface ergonomique et responsive en HTML et CSS permettant une visualisation claire du calendrier, une interaction intuitive avec les jours et une bonne lisibilité des événements</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">5</div>
+                  <div>
+                    <h4>Implémentation du moteur d'Intelligence Artificielle (IA)</h4>
+                    <p>Développement d'un script Python utilisant la vision par ordinateur pour la reconnaissance faciale. 
+                      Optimisation de la détection via MediaPipe et mise en place d'un algorithme de tracking (CSRT) pour maintenir une fluidité de traitement malgré les ressources matérielles limitées.</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">6</div>
+                  <div>
+                    <h4>Interconnexion des systèmes et contrôle d'accès en temps réel</h4>
+                    <p>Développement d'un "pont" logiciel permettant au script Python d'interroger la base de données MySQL en temps réel. 
+                      Le système compare l'identité détectée avec le planning actuel pour autoriser ou refuser l'accès de manière automatisée.</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">7</div>
+                  <div>
+                    <h4>Intégration de flux vidéo réseau (RTSP)</h4>
+                    <p>Configuration et test de caméras de surveillance distantes. Gestion des protocoles de streaming réseau et résolution des problématiques de latence et de compatibilité des codecs vidéo pour une surveillance déportée efficace.</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">8</div>
+                  <div>
+                    <h4>Développement du système d'alerte et de journalisation</h4>
+                    <p>Mise en place d'une procédure automatique en cas d'intrusion : capture de preuve photographique, envoi immédiat d'un email d'alerte via protocole SMTP, et archivage dans un journal de bord web sécurisé pour consultation ultérieure.</p>
+                  </div>
+                </div>
+                <div class="mission-item">
+                  <div class="mission-num">9</div>
+                  <div>
+                    <h4>Documentation du projet</h4>
+                    <p>Rédaction d’une documentation détaillée décrivant les fonctionnalités, l'architecture et les spécifications techniques du projet et les difficultés rencontrées.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stage-col-side">
+            <div class="stage-block reveal reveal-delay-3">
+              <h3 class="sb-title">Outils utilisés</h3>
+              <div class="tools-wrap">
+                <span class="tool">WAMP</span>
+                <span class="tool">PHP</span>
+                <span class="tool">MySQL / PhpMyAdmin</span>
+                <span class="tool">HTML5 / CSS3</span>
+                <span class="tool">JavaScript</span>
+                <span class="tool">Visual Studio Code</span>
+                <span class="tool">Navigateur Web</span>
+                <span class="tool">Python</span>
+                <span class="tool">RTSP</span>
+              </div>
+            </div>
+            <div class="stage-block reveal reveal-delay-4">
+              <h3 class="sb-title">Compétences développées</h3>
+              <div class="comp-list">
+                <div class="comp-item">
+                  <span class="comp-dot comp-dot--tech"></span>
+                  <div><strong>Développement technique</strong>
+                    <p>- Approfondissement de la gestion du langage PHP et des intéractions avec une base de données</p>
+                    <p>- Création et gestion de requêtes SQL</p>
+                    <p>- Compréhension des protocoles de streaming RTSP et des architectures web (client / serveur)</p>
+                  </div>
+                </div>
+                <div class="comp-item">
+                  <span class="comp-dot comp-dot--orga"></span>
+                  <div><strong>Front-end</strong>
+                    <p>- Création d’interfaces utilisateur ergonomiques</p>
+                    <p>- Gestion du responsive design</p>
+                    <p>- Manipulation du DOM avec JavaScript</p>
+                  </div>
+                </div>
+                <div class="comp-item">
+                  <span class="comp-dot comp-dot--bdd"></span>
+                  <div><strong>Base de données</strong>
+                    <p>- Conception d’un modèle relationnel</p>
+                    <p>- Gestion des relations entre tables</p>
+                    <p>- Optimisation des requêtes</p>
+                  </div>
+                </div>
+                <div class="comp-item">
+                <span class="comp-dot comp-dot--rtsp"></span>
+                <div><strong>Gestion et configuration de flux vidéo IP (RTSP)</strong>
+                  <p>- Maîtrise du protocole RTSP pour la récupération de flux vidéo en direct depuis des caméras IP.</p>
+                  <p>- Paramétrage des URL de flux pour l'interfaçage avec le logiciel de surveillance.</p>
+                  <p>- Analyse et résolution des problématiques de bande passante et de latence réseau impactant la fluidité de la reconnaissance faciale.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bilan-block reveal">
+          <h3 class="sb-title">Bilan du stage</h3>
+          <div class="bilan-grid">
+            <div class="bilan-card bilan-pos">
+              <h4>Points positifs</h4>
+              <ul>
+                <li>Capacité à travailler sur toute la chaîne de production, de la base de données à l'interface utilisateur.</li>
+                <li>Capacité à rechercher des solutions techniques face à des bugs complexes (notamment sur les flux RTSP ou les modèles d'IA).</li>
+                <li>Mise en place d'une solution moderne (IA) répondant à une problématique réelle de sécurité physique en entreprise.</li>
+                <li>Maîtrise de nouvelles bibliothèques Python pour répondre aux exigences du projet.</li>
+                <li>Mise en place d’une architecture de projet propre et réutilisable</li>
+                <li>Travail sur un projet combinant plusieurs technologies</li>
+              </ul>
+            </div>
+            <div class="bilan-card bilan-axe">
+              <h4>Axes de progression</h4>
+              <ul>
+                <li>Renforcer les compétences en JavaScript (notamment sur la gestion avancée du DOM)</li>
+                <li>Approfondir les notions de sécurité web (authentification, gestion des droits)</li>
+                <li>Mieux anticiper les interactions entre les différents fichiers (CSS, JS, PHP)</li>
+                <li>Monter en compétence sur l'utilisation de Wireshark pour analyser précisément les paquets RTSP et diagnostiquer des problèmes de perte de paquets sur le réseau.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- PDF -->
+        <div class="pdf-stage-block reveal">
+          <h3 class="sb-title">Rapport de stage</h3>
+          <div class="pdf-duo">
+          
+            <div class="pdf-card">
+              <div class="pdf-card-header">
+                <div>
+                  <p class="pdf-card-title">Rapport de stage</p>
+                  <p class="pdf-card-sub">Document de synthèse du stage</p>
+                </div>
+              </div>
+              <iframe class="pdf-iframe-large"
+                      src="docs/stage2/rapport-stage2.pdf"
+                      title="Rapport stage 2">
+              </iframe>
+            </div>
+          
+            <div class="pdf-card">
+              <div class="pdf-card-header">
+                <div>
+                  <p class="pdf-card-title">Convention de stage</p>
+                  <p class="pdf-card-sub">Convention signée entre l'établissement et l'entreprise</p>
+                </div>
+              </div>
+              <iframe class="pdf-iframe-large"
+                      src="docs/stage2/convention-stage2.pdf"
+                      title="Convention stage 2">
+              </iframe>
+            </div>
+          
+          </div>
+        </div>
+
+        </div><!-- /stage-2 -->
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">Portfolio BTS SIO SISR · 2024–2026</div>
+  </footer>
+  <script src="../shared/shared.js"></script>
+  <script src="../shared/particles.js"></script>
+</body>
+</html>

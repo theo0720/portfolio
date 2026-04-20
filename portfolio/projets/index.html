@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets — Portfolio BTS SIO SISR</title>
+  <link rel="stylesheet" href="../shared/global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-wrap">
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <a class="nav-logo" href="../accueil/index.html">
+        <span class="logo-mark">BTS</span><span class="logo-text">SIO · SISR</span>
+      </a>
+      <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../accueil/index.html"     data-page="accueil">Accueil</a></li>
+        <li><a href="../profil/index.html"      data-page="profil">Profil</a></li>
+        <li><a href="../projets/index.html"     data-page="projets">Projets</a></li>
+        <li><a href="../stages/index.html"      data-page="stages">Stages</a></li>
+        <li><a href="../competences/index.html" data-page="competences">Compétences</a></li>
+        <li><a href="../veille/index.html"      data-page="veille">Veille</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── PAGE HEADER ─────────────────────────────────────── -->
+  <section class="page-header">
+    <canvas id="ph-particles" data-particles aria-hidden="true"
+            style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;"></canvas>
+    <div class="container" style="position:relative;z-index:1;">
+      <p class="eyebrow">Réalisations</p>
+      <span class="gold-rule"></span>
+      <h1 class="display-title">Mes Projets</h1>
+      <p class="page-header-desc">
+        Travaux pratiques et projets réalisés en formation — contexte, démarche,
+        outils et documentation associée.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── ONGLETS ──────────────────────────────────────────── -->
+  <section class="projects-section">
+    <div class="container" data-tabs-group>
+
+      <!-- Nav onglets -->
+      <div class="tabs-nav reveal">
+        <button class="tab-btn tab-active" data-tab="p1">
+          <span class="tab-num">01</span>
+          Projet M2L
+        </button>
+        <button class="tab-btn" data-tab="p2">
+          <span class="tab-num">02</span>
+          Contexte CUB
+        </button>
+        <button class="tab-btn" data-tab="p3">
+          <span class="tab-num">03</span>
+          Projet ACC
+        </button>
+        <!-- Ajoutez des boutons ici pour de nouveaux projets -->
+      </div>
+
+      <!-- ══ PROJET 1 ══════════════════════════════════════ -->
+      <div data-panel="p1" class="project-panel panel-active">
+
+        <div class="project-intro reveal">
+          <div class="pi-meta">
+            <span class="tag tag-navy">Projet scolaire</span>
+            <span class="tag tag-soft">Réseau · 2024</span>
+          </div>
+          <h2 class="section-heading">Mise en place d'une infrastructure réseau pour une organisation</h2>
+        </div>
+
+        <div class="project-body">
+
+          <div class="project-grid reveal reveal-delay-1">
+            <div class="proj-block">
+              <h4><span class="pb-num">1</span> Contexte</h4>
+              <p>Le <strong>projet scolaire</strong> s'inscrit dans le cadre de la <strong>Maison des Ligues de Lorraine (M2L)</strong>, une organisation fictive, simulant un environnement professionnel.</p>
+              <p class="mt-s"><strong>Objectif :</strong> Concevoir et mettre en place une infrastructure réseau répondant aux besoins des ligues sportives hébérgées.</p>
+            </div>
+            <div class="proj-block">
+              <h4><span class="pb-num">2</span> Problématique</h4>
+              <p>Comment <strong>concevoir et déployer une infrastructure réseau fonctionnelle</strong> permettant la communications entre les équipements, la gestion des utilisateurs et la mise à disposition de services réseau (DHCP, DNS, Active Directory) ?</p>
+            </div>
+          </div>
+
+          <div class="proj-block proj-block--full reveal reveal-delay-2">
+            <h4><span class="pb-num">3</span> Réalisation</h4>
+            <ul class="steps-list">
+              <li>Conception du schéma réseau et plan d'adressage IP (RFC 1918)</li>
+              <li>Configuration des VLANs et trunks sur commutateur Cisco</li>
+              <li>Déploiement d'un serveur DHCP par VLAN avec les plages d'adresses appropriées</li>
+              <li>Installation et configuration d'un serveur DNS et Active Directory</li>
+              <li>Création et gestion des utilisateurs et machines</li>
+              <li>Tests de bon fonctionnement (connectivité, accès, services)</li>
+              <li>Rédaction d'une documentation technique complète (schémas, configs, tests)</li>
+            </ul>
+          </div>
+
+          <div class="proj-block-row reveal reveal-delay-3">
+            <div class="proj-block">
+              <h4><span class="pb-num">4</span> Outils utilisés</h4>
+              <div class="tools-wrap">
+                <span class="tool">Machines virtuelles</span>
+                <span class="tool">Outils réseau</span>
+                <span class="tool">Windows Server</span>
+                <span class="tool">Debian Linux</span>
+                <span class="tool">Diagrams.net</span>
+              </div>
+            </div>
+            <div class="proj-block">
+              <h4><span class="pb-num">5</span> Résultat</h4>
+              <p>Infrastructure opérationnelle : VLANs segmentés, DHCP et DNS fonctionnels, utilisateurs pouvant accéder aux ressources. Tous les tests de connectivité et de blocage sont concluants.</p>
+            </div>
+          </div>
+
+          <div class="proj-block proj-block--full reveal">
+            <h4><span class="pb-num">6</span> Compétences mobilisées</h4>
+            <div class="skills-tags">
+              <span class="tag tag-navy">Configuration VLAN</span>
+              <span class="tag tag-navy">Routage IP</span>
+              <span class="tag tag-navy">Configuration DNS</span>
+              <span class="tag tag-soft">DHCP Server</span>
+              <span class="tag tag-soft">Documentation technique</span>
+              <span class="tag tag-gold">Adressage IPv4</span>
+              <span class="tag tag-gold">Gérer les utilisateurs dans un domaine Active Directory</span>
+            </div>
+          </div>
+
+          <!-- PDF -->
+          <div class="pdf-block reveal">
+            <h4 class="pdf-title">Documentation du projet</h4>
+          
+            <!-- Filtres -->
+            <div class="pdf-filter-row">
+              <button class="pdf-filter-btn pdf-filter-active" data-pdf-filter="all">Tous</button>
+              <button class="pdf-filter-btn" data-pdf-filter="contexte">Contexte</button>
+              <button class="pdf-filter-btn" data-pdf-filter="documentation">Documentation</button>
+              <button class="pdf-filter-btn" data-pdf-filter="configuration">Configuration</button>
+              <button class="pdf-filter-btn" data-pdf-filter="tableau">Tableau</button>
+            </div>
+          
+            <div class="pdf-duo">
+            
+              <!-- CONTEXTE -->
+              <div class="pdf-card" data-cat="contexte">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Contexte du projet M2L</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/m2l/m2l-organisation.pdf"
+                        title="Contexte M2L">
+                </iframe>
+              </div>
+            
+              <!-- TABLEAU -->
+              <div class="pdf-card" data-cat="tableau">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Tableau constituant les éléments du réseau informatique de Sport Assur</p>
+                    <p class="pdf-card-sub">Proposition chiffrée des composants à acquérir</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/m2l/mission1APequipe7.pdf"
+                        title="Tableau Sport Assur">
+                </iframe>
+              </div>
+            
+              <!-- CONFIGURATION -->
+              <div class="pdf-card" data-cat="configuration">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Configuration initiale d'un commutateur Cisco 2960</p>
+                    <p class="pdf-card-sub">Documentation de la configuration initiale</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/m2l/Config switch.pdf"
+                        title="Config switch">
+                </iframe>
+              </div>
+            
+              <div class="pdf-card" data-cat="configuration">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Configuration approfondie du commutateur</p>
+                    <p class="pdf-card-sub">Configuration avancée du Cisco 2960</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/m2l/ExoLab-configuration-switch-cisco-2025.pdf"
+                        title="Config avancée switch">
+                </iframe>
+              </div>
+            
+              <div class="pdf-card" data-cat="configuration">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Sauvegarde de la configuration du commutateur</p>
+                    <p class="pdf-card-sub">Procédure de sauvegarde sur Cisco 2960</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/m2l/ExoLab-configuration-switch-Cisco-Sauvegarde.pdf"
+                        title="Sauvegarde switch">
+                </iframe>
+              </div>
+            
+              <div class="pdf-card" data-cat="configuration">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Configuration d'un serveur DNS</p>
+                    <p class="pdf-card-sub">Mise en place pas à pas</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/m2l/Mise en place d'un serveur DNS.pdf"
+                        title="Config DNS">
+                </iframe>
+              </div>
+            
+              <div class="pdf-card" data-cat="configuration">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Création d'un serveur Web (LAMP)</p>
+                    <p class="pdf-card-sub">Déploiement de la stack LAMP</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/m2l/tdpro.pdf"
+                        title="Serveur LAMP">
+                </iframe>
+              </div>
+            
+              <div class="pdf-card" data-cat="configuration">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Première configuration d'un serveur Active Directory</p>
+                    <p class="pdf-card-sub">Découverte et mise en place du service d'annuaire</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/m2l/decouverte-ad.tt.pdf"
+                        title="Active Directory">
+                </iframe>
+              </div>
+            
+              <!-- DOCUMENTATION -->
+              <div class="pdf-card" data-cat="documentation">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Aide à la configuration d'un serveur DNS</p>
+                    <p class="pdf-card-sub">Annexes et ressources de référence</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/m2l/DNS-Annexes.pdf"
+                        title="Annexes DNS">
+                </iframe>
+              </div>
+            
+            </div><!-- /pdf-duo -->
+          </div><!-- /pdf-block -->
+        </div>
+      </div>
+      
+      <!-- ══ PROJET 2 ══════════════════════════════════════ -->
+      <div data-panel="p2" class="project-panel">
+
+        <div class="project-intro reveal">
+          <div class="pi-meta">
+            <span class="tag tag-navy">Projet scolaire</span>
+            <span class="tag tag-soft">Réseau · 2025</span>
+          </div>
+          <h2 class="section-heading">Déploiement d'une infrastructure réseau simulée</h2>
+        </div>
+
+        <div class="project-body">
+          <div class="project-grid reveal reveal-delay-1">
+            <div class="proj-block">
+              <h4><span class="pb-num">1</span> Contexte</h4>
+              <p><strong>Projet scolaire</strong> portant sur le contexte CUB, une entreprise fictive spécialisée dans la <strong>mise à disposition d’espaces de coworking via une plateforme numérique.</strong></p>
+              <p>CUB propose à des entreprises de louer des salles (réunion, formation…) et s’appuie sur une infrastructure informatique pour gérer <strong>les accès aux services, les ressources réseau et les outils collaboratifs.</strong><p>
+              <p class="mt-s"><strong>Objectif :</strong> Se servir de ce contexte comme <strong>support pédagogique</strong> pour <strong>concevoir et déployer une infrastructure réseau simulée.</strong></p>
+            </div>
+            <div class="proj-block">
+              <h4><span class="pb-num">2</span> Problématique</h4>
+              <p>Comment <strong>concevoir et mettre en place une infrastructure réseau sécurisée et organisée</strong> pour répondre aux besoins de l’entreprise CUB, notamment la <strong>segmentation du réseau (VLAN)</strong>, la <strong>gestion des utilisateurs</strong>, la <strong>mise en place de services (DHCP, DNS, Active Directory)</strong>
+                 et l'<strong>accès aux ressources internes et à Internet</strong> ?</p>
+            </div>
+          </div>
+
+          <div class="proj-block proj-block--full reveal reveal-delay-2">
+            <h4><span class="pb-num">3</span> Réalisation</h4>
+            <ul class="steps-list">
+              <li>Conception d’une architecture réseau adaptée à l’entreprise</li>
+              <li>Mise en place de VLANs pour segmenter le réseau</li>
+              <li>Configuration des équipements (switch, routeur, pare-feu)</li>
+              <li>Mise en place des services (DHCP, DNS, Active Directory)</li>
+              <li>Installation d’un serveur (Linux/Debian)</li>
+              <li>Tests de connectivité et validation du fonctionnement</li>
+              <li>Rédaction de la procédure de déploiement et de maintenance</li>
+            </ul>
+          </div>
+
+          <div class="proj-block-row reveal reveal-delay-3">
+            <div class="proj-block">
+              <h4><span class="pb-num">4</span> Outils utilisés</h4>
+              <div class="tools-wrap">
+                <span class="tool">Switch / Routeur</span>
+                <span class="tool">Windows Server</span>
+                <span class="tool">Machine Linux (Debian)</span>
+                <span class="tool">Commandes réseaux</span>
+                <span class="tool">Environnement virtualisé</span>
+              </div>
+            </div>
+            <div class="proj-block">
+              <h4><span class="pb-num">5</span> Résultat</h4>
+              <p>Une infrastructure réseau fonctionnelle et segmentée permettant la mise en place d'une communication entre les différents VLANs, de services réseau opérationnels, la gestion des utilisateurs via Active Directory
+                et l'accès aux ressources et à Internet fonctionnel. Reproduction d'une architecture réseau réaliste d’entreprise.</p>
+            </div>
+          </div>
+
+          <div class="proj-block proj-block--full reveal">
+            <h4><span class="pb-num">6</span> Compétences mobilisées</h4>
+            <div class="skills-tags">
+              <span class="tag tag-navy">DHCP server</span>
+              <span class="tag tag-navy">Pare-feu (Stormshield)</span>
+              <span class="tag tag-gold">DNS server</span>
+              <span class="tag tag-soft">Serveur Web</span>
+              <span class="tag tag-gold">VLAN</span>
+              <span class="tag tag-soft">Active Directory</span>
+              <span class="tag tag-gold">Redondance de serveur</span>
+            </div>
+          </div>
+
+      <!-- PDF -->
+
+      <div class="pdf-block reveal">
+        <h4 class="pdf-title">Documentation du projet</h4>
+      
+        <!-- Filtres -->
+        <div class="pdf-filter-row">
+          <button class="pdf-filter-btn pdf-filter-active" data-pdf-filter="all">Tous</button>
+          <button class="pdf-filter-btn" data-pdf-filter="contexte">Contexte</button>
+          <button class="pdf-filter-btn" data-pdf-filter="configuration">Configuration</button>
+          <button class="pdf-filter-btn" data-pdf-filter="schema">Schémas</button>
+          <!-- Ajoute / renomme les catégories selon tes groupements -->
+        </div>
+      
+        <div class="pdf-duo" id="pdf-grid-p1">
+        
+          <div class="pdf-card" data-cat="contexte">
+            <div class="pdf-card-header">
+              <div>
+                <p class="pdf-card-title">Contexte du projet CUB</p>
+              </div>
+            </div>
+            <iframe class="pdf-iframe-large"
+                    src="docs/cub/le_contexte_cub.pdf"
+                    title="Contexte CUB">
+            </iframe>
+          </div>
+        
+          <div class="pdf-card" data-cat="contexte">
+            <div class="pdf-card-header">
+              <div>
+                <p class="pdf-card-title">Ressources pour le projet CUB</p>
+              </div>
+            </div>
+            <iframe class="pdf-iframe-large"
+                    src="docs/cub/ressources.pdf"
+                    title="Ressources CUB">
+            </iframe>
+          </div>
+        
+          <div class="pdf-card" data-cat="contexte">
+            <div class="pdf-card-header">
+              <div>
+                <p class="pdf-card-title">Mission du projet CUB</p>
+              </div>
+            </div>
+            <iframe class="pdf-iframe-large"
+                    src="docs/cub/ap3_et_ap4_sisr_contexte_gsb.pdf"
+                    title="Mission CUB">
+            </iframe>
+          </div>
+        
+          <div class="pdf-card" data-cat="schema">
+            <div class="pdf-card-header">
+              <div>
+                <p class="pdf-card-title">Schéma pour l'agence Dortmund</p>
+                <p class="pdf-card-sub">Plan d'organisation et d'adressage</p>
+              </div>
+            </div>
+            <iframe class="pdf-iframe-large"
+                    src="docs/cub/schema-dortmund.pdf"
+                    title="Schéma Dortmund">
+            </iframe>
+          </div>
+        
+          <div class="pdf-card" data-cat="configuration">
+            <div class="pdf-card-header">
+              <div>
+                <p class="pdf-card-title">Création des VLANs</p>
+                <p class="pdf-card-sub">Répartition des VLANs pour l'agence Dortmund</p>
+              </div>
+            </div>
+            <iframe class="pdf-iframe-large"
+                    src="docs/cub/vlan-cub.pdf"
+                    title="VLANs CUB">
+            </iframe>
+          </div>
+
+          <div class="pdf-card" data-cat="configuration">
+            <div class="pdf-card-header">
+              <div>
+                <p class="pdf-card-title">Création du serveur DHCP</p>
+                <p class="pdf-card-sub">Configuration DHCP</p>
+              </div>
+            </div>
+            <iframe class="pdf-iframe-large"
+                    src="docs/cub/configDHCP.pdf"
+                    title="DHCP">
+            </iframe>
+          </div>
+        
+          <div class="pdf-card" data-cat="configuration">
+            <div class="pdf-card-header">
+              <div>
+                <p class="pdf-card-title">Création du serveur DHCP secondaire</p>
+                <p class="pdf-card-sub">Configuration DHCP secondaire</p>
+              </div>
+            </div>
+            <iframe class="pdf-iframe-large"
+                    src="docs/cub/DHCP-SECOND.pdf"
+                    title="DHCP secondaire">
+            </iframe>
+          </div>
+
+          <div class="pdf-card" data-cat="configuration">
+            <div class="pdf-card-header">
+              <div>
+                <p class="pdf-card-title">Création de l'agent relais</p>
+                <p class="pdf-card-sub">Configuration Agent relais</p>
+              </div>
+            </div>
+            <iframe class="pdf-iframe-large"
+                    src="docs/cub/DHCP-RELAIS.pdf"
+                    title="Agent relais">
+            </iframe>
+          </div>
+        
+          <div class="pdf-card" data-cat="configuration">
+            <div class="pdf-card-header">
+              <div>
+                <p class="pdf-card-title">Création du serveur DNS</p>
+                <p class="pdf-card-sub">Configuration DNS</p>
+              </div>
+            </div>
+            <iframe class="pdf-iframe-large"
+                    src="docs/cub/DNS.pdf"
+                    title="DNS">
+            </iframe>
+          </div>
+
+           <div class="pdf-card" data-cat="configuration">
+            <div class="pdf-card-header">
+              <div>
+                <p class="pdf-card-title">Création du serveur DNS recursif</p>
+                <p class="pdf-card-sub">Configuration DNS recursif</p>
+              </div>
+            </div>
+            <iframe class="pdf-iframe-large"
+                    src="docs/cub/DNS-RECURSIF.pdf"
+                    title="DNS recursif">
+            </iframe>
+          </div>
+        
+          <div class="pdf-card" data-cat="configuration">
+            <div class="pdf-card-header">
+              <div>
+                <p class="pdf-card-title">Création d'un client</p>
+                <p class="pdf-card-sub">Configuration du client</p>
+              </div>
+            </div>
+            <iframe class="pdf-iframe-large"
+                    src="docs/cub/CLIENT.pdf"
+                    title="Client">
+            </iframe>
+          </div>
+
+          <div class="pdf-card" data-cat="configuration">
+            <div class="pdf-card-header">
+              <div>
+                <p class="pdf-card-title">Création d'une infrastructure PKI</p>
+                <p class="pdf-card-sub">Configuration PKI</p>
+              </div>
+            </div>
+            <iframe class="pdf-iframe-large"
+                    src="docs/cub/PKI.pdf"
+                    title="PKI">
+            </iframe>
+          </div>
+        
+          <div class="pdf-card" data-cat="configuration">
+            <div class="pdf-card-header">
+              <div>
+                <p class="pdf-card-title">Pare-feu Stormshield</p>
+                <p class="pdf-card-sub">Configuration SNS</p>
+              </div>
+            </div>
+            <iframe class="pdf-iframe-large"
+                    src="docs/cub/SNS.pdf"
+                    title="SNS">
+            </iframe>
+          </div>
+        
+          <!-- Continue avec tes autres cartes en ajoutant data-cat="contexte/configuration/schema" -->
+        
+        </div>
+      </div>
+      </div>
+      </div>
+
+
+
+
+      <!-- ══ PROJET 3 ══════════════════════════════════════ -->
+      <div data-panel="p3" class="project-panel">
+
+        <div class="project-intro reveal">
+          <div class="pi-meta">
+            <span class="tag tag-navy">Projet scolaire</span>
+            <span class="tag tag-soft"></span>
+          </div>
+          <h2 class="section-heading">Déploiement et configuration d'un pare-feu pfSense</h2>
+        </div>
+
+        <div class="project-body">
+          <div class="project-grid reveal reveal-delay-1">
+            <div class="proj-block">
+              <h4><span class="pb-num">1</span> Contexte</h4>
+              <p><strong>Projet scolaire</strong> de première année portant sur la sécurisation d'un périmètre réseau.</p>
+              <p class="mt-s"><strong>Objectif :</strong> Déployer pfSense comme pare-feu entre un LAN et un accès WAN simulé, avec des règles de filtrage adaptées.</p>
+            </div>
+            <div class="proj-block">
+              <h4><span class="pb-num">2</span> Problématique</h4>
+              <p>Comment sécuriser un réseau d'entreprise face aux menaces extérieures en contrôlant les flux entrants et sortants, tout en maintenant les accès légitimes des utilisateurs ?</p>
+            </div>
+          </div>
+
+          <div class="proj-block proj-block--full reveal reveal-delay-2">
+            <h4><span class="pb-num">3</span> Réalisation</h4>
+            <ul class="steps-list">
+              <li>Installation de pfSense sur VirtualBox (VM dédiée)</li>
+              <li>Configuration des interfaces WAN et LAN</li>
+              <li>Mise en place des règles de filtrage (blocage des ports non nécessaires)</li>
+              <li>Configuration d'un VPN IPSec site-à-site</li>
+              <li>Activation de l'IDS/IPS Snort pour la détection d'intrusion</li>
+              <li>Tests de pénétration basiques pour valider les règles de filtrage</li>
+              <li>Génération de rapports de trafic via les logs pfSense</li>
+            </ul>
+          </div>
+
+          <div class="proj-block-row reveal reveal-delay-3">
+            <div class="proj-block">
+              <h4><span class="pb-num">4</span> Outils utilisés</h4>
+              <div class="tools-wrap">
+                <span class="tool">pfSense</span>
+                <span class="tool">VirtualBox</span>
+                <span class="tool">Snort (IDS/IPS)</span>
+                <span class="tool">VPN IPSec</span>
+                <span class="tool">Wireshark</span>
+              </div>
+            </div>
+            <div class="proj-block">
+              <h4><span class="pb-num">5</span> Résultat</h4>
+              <p>Le pare-feu filtre correctement le trafic. Les ports non autorisés sont bloqués, le VPN est fonctionnel et Snort génère des alertes sur les tentatives de scan. Solution validée par l'enseignant.</p>
+            </div>
+          </div>
+
+          <div class="proj-block proj-block--full reveal">
+            <h4><span class="pb-num">6</span> Compétences mobilisées</h4>
+            <div class="skills-tags">
+              <span class="tag tag-navy">pfSense / Pare-feu</span>
+              <span class="tag tag-navy">VPN IPSec</span>
+              <span class="tag tag-soft">IDS / IPS Snort</span>
+              <span class="tag tag-gold">Analyse de trafic</span>
+              <span class="tag tag-soft">Virtualisation</span>
+            </div>
+          </div>
+
+          <div class="pdf-block reveal">
+            <h4 class="pdf-title">Documentation du projet</h4>
+            <div class="pdf-zone" id="zone-p3">
+              <label for="pdf-p3">
+                <div class="pdf-zone-icon">📄</div>
+                <p>Cliquez pour charger votre documentation PDF</p>
+                <span class="btn btn-outline" style="margin-top:16px; pointer-events:none;">Charger un PDF</span>
+              </label>
+              <input type="file" id="pdf-p3" accept=".pdf" data-iframe="iframe-p3" data-zone="zone-p3" style="display:none;">
+            </div>
+            <iframe id="iframe-p3" class="pdf-iframe" title="Documentation projet 3"></iframe>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /container -->
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">Portfolio BTS SIO SISR · 2024–2026</div>
+  </footer>
+  <script src="../shared/shared.js"></script>
+  <script src="../shared/particles.js"></script>
+
+  <script>
+  document.querySelectorAll('.pdf-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Bouton actif
+      const row = btn.closest('.pdf-filter-row');
+      row.querySelectorAll('.pdf-filter-btn').forEach(b => b.classList.remove('pdf-filter-active'));
+      btn.classList.add('pdf-filter-active');
+
+      // Filtrage des cartes
+      const filter = btn.dataset.pdfFilter;
+      const grid = btn.closest('.pdf-block').querySelector('.pdf-duo');
+      grid.querySelectorAll('.pdf-card').forEach(card => {
+        if (filter === 'all' || card.dataset.cat === filter) {
+          card.classList.remove('pdf-hidden');
+        } else {
+          card.classList.add('pdf-hidden');
+        }
+      });
+    });
+  });
+</script>
+
+
+  
+</body>
+</html>

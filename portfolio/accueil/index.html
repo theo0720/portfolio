@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil — Portfolio BTS SIO SISR</title>
+  <link rel="stylesheet" href="../shared/global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-wrap">
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="site-nav">
+      <a class="nav-logo" href="../accueil/index.html">
+        <span class="logo-mark">BTS</span>
+        <span class="logo-text">SIO · SISR</span>
+      </a>
+      <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../accueil/index.html"     data-page="accueil">Accueil</a></li>
+        <li><a href="../profil/index.html"      data-page="profil">Profil</a></li>
+        <li><a href="../projets/index.html"     data-page="projets">Projets</a></li>
+        <li><a href="../stages/index.html"      data-page="stages">Stages</a></li>
+        <li><a href="../competences/index.html" data-page="competences">Compétences</a></li>
+        <li><a href="../veille/index.html"      data-page="veille">Veille</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ══ HERO ══════════════════════════════════════════════ -->
+  <section class="hero">
+    <canvas id="hero-particles" data-particles aria-hidden="true"
+            style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;"></canvas>
+    <div class="container hero-inner" style="position:relative;z-index:1;">
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow">Portfolio</p>
+        <h1 class="display-title hero-title">
+          Brevet de<br>Technicien<br><em>Supérieur SIO</em>
+        </h1>
+        <p class="hero-desc">
+          Services Informatiques aux Organisations — une formation Bac+2
+          orientée systèmes, réseaux, cybersécurité et développement.
+        </p>
+        <div class="hero-badges">
+          <span class="tag tag-navy">SISR — Réseaux</span>
+          <span class="tag tag-soft">SLAM — Développement</span>
+        </div>
+      </div>
+      <div class="hero-deco" aria-hidden="true">
+        <div class="deco-ring"></div>
+        <div class="deco-ring deco-ring--2"></div>
+        <span class="deco-label">2024–2026</span>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
+      <p>Découvrir</p>
+    </div>
+  </section>
+
+  <!-- ══ QU'EST-CE QUE LE BTS SIO ══════════════════════════ -->
+  <section class="section-presentation">
+    <div class="container">
+      <div class="split-layout reveal">
+        <div class="split-text">
+          <p class="eyebrow">La formation</p>
+          <span class="gold-rule"></span>
+          <h2 class="section-heading">Qu'est-ce que le BTS&nbsp;SIO&nbsp;?</h2>
+          <p class="body-text">
+            Le <strong>Brevet de Technicien Supérieur Services Informatiques aux Organisations</strong>
+            est une formation nationale de niveau Bac+2. Elle forme des professionnels aptes à
+            administrer, sécuriser et développer les systèmes d'information des entreprises et
+            collectivités.
+          </p>
+          <p class="body-text mt">
+            La formation mêle cours théoriques, travaux pratiques et
+            <strong>deux stages en entreprise</strong>, permettant une immersion professionnelle dès
+            la première année.
+          </p>
+        </div>
+        <div class="split-numbers">
+          <div class="stat-item reveal reveal-delay-1">
+            <span class="stat-num">2</span>
+            <span class="stat-label">années de formation</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <span class="stat-num">2</span>
+            <span class="stat-label">options disponibles</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">semaines de stage</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ LES DEUX OPTIONS ══════════════════════════════════ -->
+  <section class="section-options">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Spécialisations</p>
+        <span class="gold-rule"></span>
+        <h2 class="section-heading">Les deux options</h2>
+      </div>
+      <div class="options-grid">
+        <!-- SISR -->
+        <div class="option-card option-card--featured reveal reveal-delay-1">
+          <div class="option-num">01</div>
+          <h3>SISR</h3>
+          <p class="option-full">Solutions d'Infrastructure, Systèmes et Réseaux</p>
+          <ul class="option-list">
+            <li>Administration des systèmes Linux &amp; Windows Server</li>
+            <li>Configuration des réseaux (VLAN, routage, Cisco)</li>
+            <li>Sécurité — firewall, VPN, PKI, Zero Trust</li>
+            <li>Virtualisation et conteneurisation (Docker, VMware)</li>
+            <li>Supervision et maintenance des infrastructures</li>
+          </ul>
+          <div class="option-badge">Ma spécialité</div>
+        </div>
+        <!-- SLAM -->
+        <div class="option-card reveal reveal-delay-2">
+          <div class="option-num">02</div>
+          <h3>SLAM</h3>
+          <p class="option-full">Solutions Logicielles et Applications Métiers</p>
+          <ul class="option-list">
+            <li>Développement web — HTML, CSS, JavaScript, PHP</li>
+            <li>Bases de données et modélisation (SQL, MCD, MLD)</li>
+            <li>Programmation orientée objet (Java, Python, C#)</li>
+            <li>Applications mobiles</li>
+            <li>Gestion de projets logiciels</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROGRAMME ═════════════════════════════════════════ -->
+  <section class="section-programme">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Organisation</p>
+        <span class="gold-rule"></span>
+        <h2 class="section-heading">Épreuves &amp; blocs de compétences</h2>
+      </div>
+      <div class="epreuves-list">
+        <div class="epreuve-item reveal reveal-delay-1">
+          <span class="ep-code">E1</span>
+          <div class="ep-body">
+            <h4>Culture générale et expression</h4>
+            <p>Maîtrise de la langue française, argumentation, synthèse</p>
+          </div>
+          <span class="ep-format">Écrit · 3h</span>
+        </div>
+        <div class="epreuve-item reveal reveal-delay-2">
+          <span class="ep-code">E2</span>
+          <div class="ep-body">
+            <h4>Anglais</h4>
+            <p>Compréhension écrite &amp; orale, expression professionnelle</p>
+          </div>
+          <span class="ep-format">Oral + Écrit · 2H20min</span>
+        </div>
+        <div class="epreuve-item reveal reveal-delay-3">
+          <span class="ep-code">E3</span>
+          <div class="ep-body">
+            <h4>Mathématiques pour l'informatique</h4>
+            <p>Algèbre booléenne, logique, statistiques, algorithmique</p>
+          </div>
+          <span class="ep-format">Écrit · 1H</span>
+        </div>
+        <div class="epreuve-item reveal reveal-delay-4">
+          <span class="ep-code">E4</span>
+          <div class="ep-body">
+            <h4>Culture économique, juridique et managériale</h4>
+            <p>Raisonnement économique, connaissance du droit et de la gestion managériale</p>
+          </div>
+          <span class="ep-format">Écrit · 4H </span>
+        </div>
+        <div class="epreuve-item epreuve-item--highlight reveal reveal-delay-5">
+          <span class="ep-code">E5</span>
+          <div class="ep-body">
+            <h4>Support et mise à disposition de services informatiques</h4>
+            <p>Réseaux, sécurité, systèmes — portfolio de réalisations professionnelles</p>
+          </div>
+          <span class="ep-format">Oral · 40 min</span>
+        </div>
+        <div class="epreuve-item reveal reveal-delay-6">
+          <span class="ep-code">E6</span>
+          <div class="ep-body">
+            <h4>Administration des systèmes et des réseaux</h4>
+            <p>Conception et déploiement de solutions techniques</p>
+          </div>
+          <span class="ep-format">Pratique + Oral · 2H10min</span>
+        </div>
+        <div class="epreuve-item reveal reveal-delay-7">
+          <span class="ep-code">E7</span>
+          <div class="ep-body">
+            <h4>Cybersécurité des services informatiques</h4>
+            <p>Analyse de risques, protection des systèmes d'information</p>
+          </div>
+          <span class="ep-format">Écrit · 4H</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DÉBOUCHÉS ═════════════════════════════════════════ -->
+  <section class="section-debouches">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="eyebrow">Après la formation</p>
+      <span class="gold-rule"></span>
+      <h2 class="section-heading">Débouchés professionnels</h2>
+    </div>
+    <div class="debouches-compare reveal reveal-delay-1">
+
+      <!-- SISR -->
+      <div class="dc-col dc-col--featured">
+        <div class="dc-col-header">
+          <span class="dc-option-label">Option</span>
+          <h3>SISR</h3>
+          <p>Solutions d'Infrastructure, Systèmes et Réseaux</p>
+        </div>
+        <ul class="dc-list">
+          <li>
+            <strong>Technicien réseaux &amp; systèmes</strong>
+            <span>Administration des serveurs, commutateurs et routeurs en entreprise</span>
+          </li>
+          <li>
+            <strong>Administrateur systèmes</strong>
+            <span>Gestion des environnements Linux, Windows Server et Active Directory</span>
+          </li>
+          <li>
+            <strong>Technicien cybersécurité</strong>
+            <span>Mise en place de politiques de sécurité, firewall, VPN et surveillance du SI</span>
+          </li>
+          <li>
+            <strong>Administrateur cloud</strong>
+            <span>Déploiement et supervision d'infrastructures cloud (AWS, Azure, GCP)</span>
+          </li>
+          <li>
+            <strong>Support informatique N1/N2</strong>
+            <span>Assistance aux utilisateurs, helpdesk, maintenance du parc</span>
+          </li>
+          <li>
+            <strong>Poursuite d'études</strong>
+            <span>Licence Pro Réseaux, Bachelor Cybersécurité, école d'ingénieurs</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Séparateur -->
+      <div class="dc-sep" aria-hidden="true"></div>
+
+      <!-- SLAM -->
+      <div class="dc-col">
+        <div class="dc-col-header">
+          <span class="dc-option-label">Option</span>
+          <h3>SLAM</h3>
+          <p>Solutions Logicielles et Applications Métiers</p>
+        </div>
+        <ul class="dc-list">
+          <li>
+            <strong>Développeur web / applicatif</strong>
+            <span>Conception et maintenance d'applications métier en HTML, PHP, JavaScript</span>
+          </li>
+          <li>
+            <strong>Développeur mobile</strong>
+            <span>Création d'applications iOS et Android pour les besoins de l'entreprise</span>
+          </li>
+          <li>
+            <strong>Intégrateur web</strong>
+            <span>Mise en page, intégration de maquettes et gestion de CMS</span>
+          </li>
+          <li>
+            <strong>Technicien support applicatif</strong>
+            <span>Maintenance corrective et évolutive des logiciels métiers</span>
+          </li>
+          <li>
+            <strong>Chef de projet junior</strong>
+            <span>Pilotage de petits projets informatiques, rédaction de cahiers des charges</span>
+          </li>
+          <li>
+            <strong>Poursuite d'études</strong>
+            <span>Licence Pro Développement, Bachelor DevOps, Master Informatique</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      Portfolio BTS SIO SISR · 2024–2026
+    </div>
+  </footer>
+
+  <script src="../shared/shared.js"></script>
+  <script src="../shared/particles.js"></script>
+</body>
+</html>

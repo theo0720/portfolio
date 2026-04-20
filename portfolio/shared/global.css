@@ -1,0 +1,283 @@
+/* ================================================================
+   PORTFOLIO BTS SIO SISR — Feuille de styles globale partagée
+   Direction : Éditorial grand format · Papier & Lumière
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+/* ── Variables ─────────────────────────────────────────────── */
+:root {
+  --bg:          #FAFAF7;
+  --bg-warm:     #F4F1EB;
+  --bg-dark:     #1B2B4B;
+  --ink:         #0F1923;
+  --ink-mid:     #4A5568;
+  --ink-soft:    #8A96A8;
+  --gold:        #C8A96E;
+  --gold-light:  #E8D5A8;
+  --white:       #FFFFFF;
+  --border:      #E2DDD4;
+
+  --serif:       'DM Serif Display', Georgia, serif;
+  --sans:        'DM Sans', system-ui, sans-serif;
+  --mono:        'DM Mono', monospace;
+
+  --max-w:       1160px;
+  --col-gap:     48px;
+  --section-gap: 120px;
+  --radius:      3px;
+  --radius-lg:   8px;
+
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+/* ── Reset ─────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--sans);
+  font-weight: 400;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* ── Layout ────────────────────────────────────────────────── */
+.container {
+  width: min(var(--max-w), 100%);
+  margin-inline: auto;
+  padding-inline: clamp(24px, 5vw, 80px);
+}
+
+/* ── Navigation ────────────────────────────────────────────── */
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+  background: rgba(250, 250, 247, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  width: min(var(--max-w), 100%);
+  margin-inline: auto;
+  padding-inline: clamp(24px, 5vw, 80px);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.logo-mark {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  color: var(--bg-dark);
+  letter-spacing: .02em;
+}
+.logo-text {
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.nav-links a {
+  font-size: .8rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  position: relative;
+  padding-bottom: 3px;
+  transition: color .2s;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 1.5px;
+  background: var(--gold);
+  transition: width .3s var(--ease-out);
+}
+.nav-links a:hover,
+.nav-links a.active { color: var(--ink); }
+.nav-links a:hover::after,
+.nav-links a.active::after { width: 100%; }
+
+.nav-burger {
+  display: none;
+  flex-direction: column; gap: 6px;
+  background: none; border: none; cursor: pointer; padding: 4px;
+}
+.nav-burger span {
+  display: block; width: 22px; height: 1.5px;
+  background: var(--ink);
+  transition: all .3s;
+}
+.nav-burger.open span:first-child { transform: translateY(7.5px) rotate(45deg); }
+.nav-burger.open span:last-child  { transform: translateY(-7.5px) rotate(-45deg); }
+
+/* ── Page offset pour la nav fixe ──────────────────────────── */
+.page-wrap { padding-top: 68px; }
+
+/* ── Titres typographiques ─────────────────────────────────── */
+.display-title {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 1.05;
+  color: var(--ink);
+  letter-spacing: -.02em;
+}
+.section-heading {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  line-height: 1.15;
+  color: var(--ink);
+}
+.eyebrow {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ── Ligne dorée décorative ────────────────────────────────── */
+.gold-rule {
+  display: block;
+  width: 48px; height: 1.5px;
+  background: var(--gold);
+  margin: 20px 0;
+}
+
+/* ── Cards ─────────────────────────────────────────────────── */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  transition: box-shadow .3s var(--ease-out), transform .3s var(--ease-out);
+}
+.card:hover {
+  box-shadow: 0 12px 48px rgba(27, 43, 75, .08);
+  transform: translateY(-3px);
+}
+
+/* ── Boutons ────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 28px;
+  font-family: var(--sans); font-size: .8rem;
+  font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  border-radius: var(--radius);
+  cursor: pointer; border: none;
+  transition: all .25s var(--ease-out);
+}
+.btn-dark {
+  background: var(--bg-dark); color: var(--white);
+}
+.btn-dark:hover { background: #243760; box-shadow: 0 8px 24px rgba(27,43,75,.25); }
+.btn-outline {
+  background: transparent;
+  border: 1.5px solid var(--border);
+  color: var(--ink-mid);
+}
+.btn-outline:hover { border-color: var(--bg-dark); color: var(--bg-dark); }
+
+/* ── Tags / Badges ─────────────────────────────────────────── */
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: .7rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase;
+  border-radius: 20px;
+}
+.tag-navy  { background: rgba(27,43,75,.08);  color: var(--bg-dark); }
+.tag-gold  { background: rgba(200,169,110,.15); color: #8B6D30; }
+.tag-soft  { background: var(--bg-warm); color: var(--ink-mid); }
+
+/* ── Dividers ───────────────────────────────────────────────── */
+hr.section-rule {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: var(--section-gap) 0;
+}
+
+/* ── Animations scroll (reveal) ────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity .8s var(--ease-out), transform .8s var(--ease-out);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+.reveal-delay-1 { transition-delay: .1s; }
+.reveal-delay-2 { transition-delay: .2s; }
+.reveal-delay-3 { transition-delay: .3s; }
+.reveal-delay-4 { transition-delay: .4s; }
+.reveal-delay-5 { transition-delay: .5s; }
+
+/* ── PDF Viewer ─────────────────────────────────────────────── */
+.pdf-zone {
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-warm);
+  padding: 60px 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color .25s, background .25s;
+}
+.pdf-zone:hover { border-color: var(--gold); background: #F0EDE4; }
+.pdf-zone p { color: var(--ink-soft); font-size: .9rem; margin-top: 12px; }
+.pdf-zone label { cursor: pointer; }
+.pdf-iframe { width: 100%; height: 680px; border: none; border-radius: var(--radius-lg); display: none; }
+
+/* ── Footer minimal ─────────────────────────────────────────── */
+.site-footer {
+  margin-top: var(--section-gap);
+  border-top: 1px solid var(--border);
+  padding: 40px 0;
+  text-align: center;
+  font-size: .78rem;
+  color: var(--ink-soft);
+  letter-spacing: .06em;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 840px) {
+  :root { --section-gap: 72px; }
+
+  .nav-links {
+    display: none;
+    position: absolute; top: 68px; left: 0; right: 0;
+    flex-direction: column; gap: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 14px clamp(24px, 5vw, 80px); width: 100%; }
+  .nav-links a::after { display: none; }
+  .nav-burger { display: flex; }
+}
+
+/* ── Script global partagé ──────────────────────────────────── */
+/* (voir shared.js) */
