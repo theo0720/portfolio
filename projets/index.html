@@ -528,91 +528,200 @@
       </div>
       </div>
       </div>
+      
 
 
 
 
       <!-- ══ PROJET 3 ══════════════════════════════════════ -->
       <div data-panel="p3" class="project-panel">
-
+      
         <div class="project-intro reveal">
           <div class="pi-meta">
             <span class="tag tag-navy">Projet scolaire</span>
-            <span class="tag tag-soft"></span>
+            <span class="tag tag-soft">Infrastructure · 2026</span>
           </div>
-          <h2 class="section-heading">Déploiement et configuration d'un pare-feu pfSense</h2>
+          <h2 class="section-heading">Aux Claviers Citoyens — Déploiement d'une infrastructure e-sport en environnement militaire</h2>
         </div>
-
+      
         <div class="project-body">
+        
           <div class="project-grid reveal reveal-delay-1">
             <div class="proj-block">
               <h4><span class="pb-num">1</span> Contexte</h4>
-              <p><strong>Projet scolaire</strong> de première année portant sur la sécurisation d'un périmètre réseau.</p>
-              <p class="mt-s"><strong>Objectif :</strong> Déployer pfSense comme pare-feu entre un LAN et un accès WAN simulé, avec des règles de filtrage adaptées.</p>
+              <p>
+                Projet initié par le <strong>Commissariat au Numérique de Défense (CND)</strong>, 
+                en partenariat avec des lycées BTS SIO et CIEL. L'objectif est de mettre en œuvre 
+                les services numériques nécessaires à la pratique du <strong>e-sport en environnement 
+                militaire</strong>, en déployant une infrastructure réseau et système complète 
+                capable de supporter une journée de compétition.
+              </p>
+              <p class="mt-s">
+                <strong>Objectif SISR :</strong> Déployer les postes joueurs, les moyens réseaux 
+                et les serveurs hébergeant l'application de gestion du tournoi développée par les 
+                étudiants SLAM.
+              </p>
             </div>
             <div class="proj-block">
               <h4><span class="pb-num">2</span> Problématique</h4>
-              <p>Comment sécuriser un réseau d'entreprise face aux menaces extérieures en contrôlant les flux entrants et sortants, tout en maintenant les accès légitimes des utilisateurs ?</p>
+              <p>
+                Comment concevoir et déployer une <strong>architecture réseau et système complète</strong> 
+                permettant d'héberger une application web, d'interconnecter des postes clients et 
+                des serveurs via une passerelle, tout en garantissant l'accès à Internet et la 
+                possibilité de déployer des logiciels à distance sur les postes joueurs ?
+              </p>
             </div>
           </div>
-
+        
           <div class="proj-block proj-block--full reveal reveal-delay-2">
             <h4><span class="pb-num">3</span> Réalisation</h4>
             <ul class="steps-list">
-              <li>Installation de pfSense sur VirtualBox (VM dédiée)</li>
-              <li>Configuration des interfaces WAN et LAN</li>
-              <li>Mise en place des règles de filtrage (blocage des ports non nécessaires)</li>
-              <li>Configuration d'un VPN IPSec site-à-site</li>
-              <li>Activation de l'IDS/IPS Snort pour la détection d'intrusion</li>
-              <li>Tests de pénétration basiques pour valider les règles de filtrage</li>
-              <li>Génération de rapports de trafic via les logs pfSense</li>
+              <li>Conception de l'architecture réseau : plan d'adressage IP (sous-réseau /20 redécoupé), schéma d'infrastructure</li>
+              <li>Installation et configuration d'une passerelle assurant l'interconnexion entre Internet, le sous-réseau postes clients et le sous-réseau serveurs</li>
+              <li>Déploiement d'un serveur d'application Linux (sans interface graphique) avec une pile LAMP — Apache2, PHP 8.2, MariaDB et PhpMyAdmin</li>
+              <li>Configuration des postes clients sur un sous-réseau dédié avec adressage fixe (bonus : DHCP)</li>
+              <li>Déploiement de l'application de gestion du tournoi depuis GitHub sur le serveur LAMP</li>
+              <li>Installation d'un serveur de déploiement à distance de logiciels sur les postes clients</li>
+              <li>Tests de connectivité, d'accès à l'application et de déploiement du navigateur Firefox 146 sur les postes clients</li>
+              <li>Rédaction des livrables : plan d'adressage, schéma réseau, documentation de déploiement</li>
             </ul>
           </div>
-
+        
           <div class="proj-block-row reveal reveal-delay-3">
             <div class="proj-block">
               <h4><span class="pb-num">4</span> Outils utilisés</h4>
               <div class="tools-wrap">
-                <span class="tool">pfSense</span>
                 <span class="tool">VirtualBox</span>
-                <span class="tool">Snort (IDS/IPS)</span>
-                <span class="tool">VPN IPSec</span>
-                <span class="tool">Wireshark</span>
+                <span class="tool">Linux (sans GUI)</span>
+                <span class="tool">Apache2</span>
+                <span class="tool">PHP 8.2</span>
+                <span class="tool">MariaDB</span>
+                <span class="tool">PhpMyAdmin</span>
+                <span class="tool">GitHub</span>
+                <span class="tool">Diagrams.net</span>
               </div>
             </div>
             <div class="proj-block">
               <h4><span class="pb-num">5</span> Résultat</h4>
-              <p>Le pare-feu filtre correctement le trafic. Les ports non autorisés sont bloqués, le VPN est fonctionnel et Snort génère des alertes sur les tentatives de scan. Solution validée par l'enseignant.</p>
+              <p>
+                Infrastructure opérationnelle le jour de la compétition sur la Base aérienne 721 
+                de Rochefort. Les postes clients accèdent à Internet et à l'application de gestion 
+                du tournoi. Firefox 146 déployé à distance sur les postes joueurs. 
+                L'application de scoring fonctionne en réseau et le serveur LAMP répond correctement 
+                aux requêtes des clients.
+              </p>
             </div>
           </div>
-
+        
           <div class="proj-block proj-block--full reveal">
             <h4><span class="pb-num">6</span> Compétences mobilisées</h4>
             <div class="skills-tags">
-              <span class="tag tag-navy">pfSense / Pare-feu</span>
-              <span class="tag tag-navy">VPN IPSec</span>
-              <span class="tag tag-soft">IDS / IPS Snort</span>
-              <span class="tag tag-gold">Analyse de trafic</span>
+              <span class="tag tag-navy">Architecture réseau</span>
+              <span class="tag tag-navy">Plan d'adressage IP</span>
+              <span class="tag tag-navy">Configuration passerelle</span>
+              <span class="tag tag-soft">Serveur LAMP</span>
               <span class="tag tag-soft">Virtualisation</span>
+              <span class="tag tag-soft">Déploiement à distance</span>
+              <span class="tag tag-gold">Documentation technique</span>
+              <span class="tag tag-gold">Travail en équipe</span>
             </div>
           </div>
-
+        
+          <!-- PDF -->
           <div class="pdf-block reveal">
             <h4 class="pdf-title">Documentation du projet</h4>
-            <div class="pdf-zone" id="zone-p3">
-              <label for="pdf-p3">
-                <div class="pdf-zone-icon">📄</div>
-                <p>Cliquez pour charger votre documentation PDF</p>
-                <span class="btn btn-outline" style="margin-top:16px; pointer-events:none;">Charger un PDF</span>
-              </label>
-              <input type="file" id="pdf-p3" accept=".pdf" data-iframe="iframe-p3" data-zone="zone-p3" style="display:none;">
+          
+            <div class="pdf-filter-row">
+              <button class="pdf-filter-btn pdf-filter-active" data-pdf-filter="all">Tous</button>
+              <button class="pdf-filter-btn" data-pdf-filter="contexte">Contexte</button>
+              <button class="pdf-filter-btn" data-pdf-filter="configuration">Configuration</button>
             </div>
-            <iframe id="iframe-p3" class="pdf-iframe" title="Documentation projet 3"></iframe>
-          </div>
-        </div>
-      </div>
+          
+            <div class="pdf-duo">
+            
+              <div class="pdf-card" data-cat="contexte">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Aux Claviers Citoyens</p>
+                    <p class="pdf-card-sub">Contexte du projet ACC</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/acc/Plaquette_ACC.pdf"
+                        title="Contexte ACC">
+                </iframe>
+              </div>
 
-    </div><!-- /container -->
+              <div class="pdf-card" data-cat="contexte">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Cahier des charges SISR</p>
+                    <p class="pdf-card-sub">Mission et besoins fonctionnels du projet ACC</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/acc/Cahier des charges Réseaux - Aux Claviers Citoyens.pdf"
+                        title="Cahier des charges ACC">
+                </iframe>
+              </div>
+
+              <div class="pdf-card" data-cat="contexte">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Accueil du projet 'Aux Claviers Citoyens'</p>
+                    <p class="pdf-card-sub">Plan d'adressage IP, Schéma réseau et Services configurés</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/acc/accueil_du_projet_aux_claviers_citoyens_acc.pdf"
+                        title="Cahier des charges ACC">
+                </iframe>
+              </div>
+            
+              <div class="pdf-card" data-cat="configuration">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Documentation technique</p>
+                    <p class="pdf-card-sub">Configuration du serveurs DHCP de l'équipe</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/acc/acc_doc_dhcp_.pdf"
+                        title="Documentation technique ACC">
+                </iframe>
+              </div>
+
+              <div class="pdf-card" data-cat="configuration">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Documentation technique</p>
+                    <p class="pdf-card-sub">Déploiement et automatisation avec Ansible</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/acc/deploiment_et_automatisation_avec_ansible.pdf"
+                        title="Documentation technique ACC">
+                </iframe>
+              </div>
+
+              <div class="pdf-card" data-cat="configuration">
+                <div class="pdf-card-header">
+                  <div>
+                    <p class="pdf-card-title">Présentation</p>
+                    <p class="pdf-card-sub">Mise en commun du travail réalisé par les différentes équipes</p>
+                  </div>
+                </div>
+                <iframe class="pdf-iframe-large"
+                        src="docs/acc/PrésentationACC_Valadon_BTSSIO_SISR.pdf"
+                        title="Cahier des charges ACC">
+                </iframe>
+              </div>
+            
+            </div>
+          </div>
+        
+        </div><!-- /project-body -->
+      </div><!-- /data-panel p3 -->
   </section>
 
   <footer class="site-footer">
