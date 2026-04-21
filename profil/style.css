@@ -238,11 +238,58 @@
   color: var(--gold) !important;
 }
 
-/* Zone de dépôt */
-.pdf-zone { cursor: pointer; }
-.cv-zone-icon { font-size: 2.5rem; margin-bottom: 14px; }
+/* ── CV ─────────────────────────────────────────────────── */
+.section-cv {
+  padding: var(--section-gap) 0;
+  background: var(--bg-warm);
+}
 
-/* iframe PDF (réutilise .pdf-iframe du global.css) */
+.cv-viewer {
+  margin-top: 48px;
+  max-width: 780px;        /* ← largeur max A4 portrait, centré */
+  margin-inline: auto;
+}
+
+.pdf-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(27,43,75,.06);
+}
+
+.pdf-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  background: var(--bg-dark);
+}
+.pdf-card-title {
+  font-size: .82rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.85);
+  margin-bottom: 2px;
+}
+.pdf-card-sub {
+  font-size: .72rem;
+  color: var(--gold);
+  letter-spacing: .04em;
+}
+
+.pdf-iframe-full {
+  width: 100%;
+  height: 1000px;          /* ← A4 portrait bien visible */
+  border: none;
+  display: block;
+  background: var(--bg-warm);
+}
+
+@media (max-width: 840px) {
+  .pdf-iframe-full { height: 680px; }
+  .cv-viewer { max-width: 100%; }
+}
+
 
 
 

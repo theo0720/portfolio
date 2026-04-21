@@ -237,26 +237,19 @@
       <span class="gold-rule"></span>
       <h2 class="section-heading">Mon CV</h2>
     </div>
-    <div class="cv-viewer-wrap reveal reveal-delay-1">
-      <div class="cv-toolbar">
-        <span class="cv-toolbar-title">Curriculum Vitæ</span>
-        <label for="cv-upload" class="btn btn-outline cv-load-btn">
-          Charger mon CV (PDF)
-        </label>
-        <input type="file" id="cv-upload" accept=".pdf"
-               data-iframe="cv-iframe" data-zone="cv-zone"
-               style="display:none;">
+    <div class="cv-viewer reveal reveal-delay-1">
+      <div class="pdf-card">
+        <div class="pdf-card-header">
+          <div>
+            <p class="pdf-card-title">Curriculum Vitæ — Théo Tran</p>
+            <p class="pdf-card-sub">BTS SIO SISR · 2024–2026</p>
+          </div>
+        </div>
+        <iframe class="pdf-iframe-full"
+                src="docs/CV_2026-04-21_THEO_TRAN.pdf"
+                title="CV Théo Tran">
+        </iframe>
       </div>
-      <div class="pdf-zone" id="cv-zone">
-        <label for="cv-upload">
-          <div class="cv-zone-icon">📄</div>
-          <p>Cliquez ici ou utilisez le bouton ci-dessus pour charger votre CV en PDF</p>
-          <span class="btn btn-dark" style="margin-top:20px; pointer-events:none;">
-            Charger le PDF
-          </span>
-        </label>
-      </div>
-      <iframe id="cv-iframe" class="pdf-iframe" title="CV"></iframe>
     </div>
   </div>
 </section>
