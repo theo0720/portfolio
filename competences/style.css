@@ -32,8 +32,8 @@
 
 .sa-header {
   display: flex; align-items: flex-start; gap: 16px;
-  margin-bottom: 32px;
-  padding-bottom: 24px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
   border-bottom: 1px solid var(--border);
 }
 .sa-icon { font-size: 1.8rem; }
@@ -45,34 +45,56 @@
 }
 .sa-header p { font-size: .82rem; color: var(--ink-soft); }
 
-/* ── Barres ─────────────────────────────────────────────── */
-.bars { display: flex; flex-direction: column; gap: 20px; }
-
-/*.bar-item {}*/
-.bar-meta {
-  display: flex; justify-content: space-between; align-items: center;
-  margin-bottom: 8px;
-}
-.bar-meta span:first-child { font-size: .875rem; color: var(--ink); }
-.bar-pct {
-  font-family: var(--mono);
-  font-size: .72rem;
-  color: var(--ink-soft);
+/* ── Liste de compétences ───────────────────────────────── */
+.skill-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
-.bar-track {
-  height: 4px;
+.skill-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border);
+}
+.skill-list li:last-child { border-bottom: none; }
+
+.skill-name {
+  font-size: .875rem;
+  color: var(--ink);
+}
+
+.skill-status {
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.status-ok {
+  background: rgba(27,43,75,.08);
+  color: var(--bg-dark);
+}
+.status-wip {
+  background: rgba(200,169,110,.15);
+  color: #8B6D30;
+}
+.status-notion {
   background: var(--bg-warm);
-  border-radius: 2px;
-  overflow: hidden;
+  color: var(--ink-soft);
+  border: 1px solid var(--border);
 }
-.bar-fill {
-  height: 100%; width: 0;
-  border-radius: 2px;
-  background: var(--bg-dark);
-  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+@media (max-width: 920px) {
+  .skills-areas { grid-template-columns: 1fr; }
 }
-.bar-fill--alt { background: var(--gold); }
 
 /* ── Référentiel ────────────────────────────────────────── */
 .section-referentiel {
