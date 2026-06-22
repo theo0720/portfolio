@@ -229,28 +229,105 @@
     </div>
   </section>
 
-<!-- ── CV ───────────────────────────────────────────────── -->
+<!-- ── CV & CERTIFICATIONS ──────────────────────────────── -->
 <section class="section-cv">
   <div class="container">
     <div class="section-header reveal">
-      <p class="eyebrow">Curriculum Vitæ</p>
+      <p class="eyebrow">Documents</p>
       <span class="gold-rule"></span>
-      <h2 class="section-heading">Mon CV</h2>
+      <h2 class="section-heading">CV &amp; Certifications</h2>
     </div>
-    <div class="cv-viewer reveal reveal-delay-1">
-      <div class="pdf-card">
-        <div class="pdf-card-header">
-          <div>
-            <p class="pdf-card-title">Curriculum Vitæ — Théo Tran</p>
-            <p class="pdf-card-sub">BTS SIO SISR · 2024–2026</p>
+
+    <!-- Sélecteur -->
+    <div data-tabs-group>
+      <div class="cv-selector reveal reveal-delay-1">
+        <button class="cv-sel-btn tab-active" data-tab="cv">
+          <span class="cvs-label">Mon CV</span>
+          <span class="cvs-sub">Curriculum Vitæ complet</span>
+        </button>
+        <button class="cv-sel-btn" data-tab="certifs">
+          <span class="cvs-label">Certifications</span>
+          <span class="cvs-sub">Diplômes &amp; attestations</span>
+        </button>
+      </div>
+
+    <!-- Panneau CV -->
+    <div data-panel="cv" class="cv-panel panel-active reveal reveal-delay-2">
+      <div class="cv-viewer">
+        <div class="pdf-card">
+          <div class="pdf-card-header">
+            <div>
+              <p class="pdf-card-title">Curriculum Vitæ — Théo Tran</p>
+              <p class="pdf-card-sub">BTS SIO SISR · 2024–2026</p>
+            </div>
           </div>
+          <iframe class="pdf-iframe-full"
+                  src="docs/CV_2026-06-22_THEO_TRAN.pdf"
+                  title="CV Théo Tran">
+          </iframe>
         </div>
-        <iframe class="pdf-iframe-full"
-                src="docs/CV_2026-04-21_THEO_TRAN.pdf"
-                title="CV Théo Tran">
-        </iframe>
       </div>
     </div>
+
+    <!-- Panneau Certifications -->
+    <div data-panel="certifs" class="cv-panel reveal reveal-delay-2">
+      <div class="certifs-grid">
+
+        <!-- Certification 1 — duplique ce bloc pour en ajouter -->
+        <div class="certif-card">
+          <div class="certif-header">
+            <div class="certif-icon"></div>
+            <div>
+              <p class="certif-title">Administrateur PAM</p>
+              <p class="certif-org">Wallix</p>
+            </div>
+            <span class="certif-date">2026</span>
+          </div>
+          <p class="certif-desc">Administration des solutions WALLIX Bastion et Access Manager</p>
+          <div class="certif-viewer">
+            <div class="pdf-card">
+              <div class="pdf-card-header">
+                <div>
+                  <p class="pdf-card-title">Certification</p>
+                </div>
+              </div>
+              <iframe class="pdf-iframe-certif"
+                      src="docs/Wallix-eWCA-P.pdf"
+                      title="Certification 1">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification 2 -->
+        <div class="certif-card">
+          <div class="certif-header">
+            <div class="certif-icon"></div>
+            <div>
+              <p class="certif-title">Certification PIX</p>
+              <p class="certif-org">PIX</p>
+            </div>
+            <span class="certif-date">2026</span>
+          </div>
+          <p class="certif-desc">Maîtrise des savoir-faire définis par le CRCN</p>
+          <div class="certif-viewer">
+            <div class="pdf-card">
+              <div class="pdf-card-header">
+                <div>
+                  <p class="pdf-card-title">Certification</p>
+                </div>
+              </div>
+              <iframe class="pdf-iframe-certif"
+                      src="docs/certification-pix-20260305.pdf"
+                      title="Certification 2">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /certifs-grid -->
+    </div>
+   </div>
   </div>
 </section>
 

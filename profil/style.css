@@ -238,18 +238,141 @@
   color: var(--gold) !important;
 }
 
-/* ── CV ─────────────────────────────────────────────────── */
+/* ── CV & Certifications ────────────────────────────────── */
 .section-cv {
   padding: var(--section-gap) 0;
   background: var(--bg-warm);
 }
 
+/* Sélecteur */
+.cv-selector {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.cv-sel-btn {
+  flex: 1;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px 28px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  text-align: left;
+  transition: all .25s var(--ease-out);
+}
+.cv-sel-btn:hover { border-color: var(--bg-dark); }
+.cv-sel-btn.tab-active {
+  background: var(--bg-dark);
+  border-color: var(--bg-dark);
+  box-shadow: 0 8px 32px rgba(27,43,75,.2);
+}
+
+.cvs-label {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  color: var(--ink);
+  transition: color .2s;
+}
+.cv-sel-btn.tab-active .cvs-label { color: var(--white); }
+
+.cvs-sub {
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  transition: color .2s;
+}
+.cv-sel-btn.tab-active .cvs-sub { color: var(--gold); }
+
+/* Panneaux */
+.cv-panel { display: none; }
+.cv-panel.panel-active { display: block; }
+
+/* Viewer CV */
 .cv-viewer {
-  margin-top: 48px;
-  max-width: 780px;        /* ← largeur max A4 portrait, centré */
+  max-width: 780px;
   margin-inline: auto;
 }
 
+/* Grille certifications */
+.certifs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.certif-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(27,43,75,.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.certif-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+}
+.certif-icon { font-size: 1.6rem; flex-shrink: 0; }
+.certif-title {
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.certif-org {
+  font-size: .78rem;
+  color: var(--ink-soft);
+}
+.certif-date {
+  margin-left: auto;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: .85rem;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.certif-desc {
+  padding: 16px 24px;
+  font-size: .875rem;
+  color: var(--ink-mid);
+  line-height: 1.65;
+  border-bottom: 1px solid var(--border);
+}
+
+.certif-viewer { flex: 1; }
+.certif-viewer .pdf-card {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.certif-viewer .pdf-card-header {
+  border-radius: 0;
+}
+
+.pdf-iframe-certif {
+  width: 100%;
+  height: 480px;
+  border: none;
+  display: block;
+  background: var(--bg-warm);
+}
+
+/* PDF card (partagé) */
 .pdf-card {
   background: var(--white);
   border: 1px solid var(--border);
@@ -257,7 +380,6 @@
   overflow: hidden;
   box-shadow: 0 4px 24px rgba(27,43,75,.06);
 }
-
 .pdf-card-header {
   display: flex;
   align-items: center;
@@ -276,18 +398,19 @@
   color: var(--gold);
   letter-spacing: .04em;
 }
-
 .pdf-iframe-full {
   width: 100%;
-  height: 1000px;          /* ← A4 portrait bien visible */
+  height: 1000px;
   border: none;
   display: block;
   background: var(--bg-warm);
 }
 
 @media (max-width: 840px) {
+  .certifs-grid { grid-template-columns: 1fr; }
+  .cv-sel-btn { max-width: 100%; }
   .pdf-iframe-full { height: 680px; }
-  .cv-viewer { max-width: 100%; }
+  .pdf-iframe-certif { height: 380px; }
 }
 
 
